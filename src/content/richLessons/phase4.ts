@@ -101,6 +101,14 @@ export const phase4Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll distinguish the five Thai tones',
+      examples: [
+        { thai: 'มา', romanization: 'maa', meaning: 'to come (mid tone)' },
+        { thai: 'ม้า', romanization: 'máa', meaning: 'horse (high tone)' },
+        { thai: 'หมา', romanization: 'mǎa', meaning: 'dog (rising tone)' },
+      ],
+    },
   },
 
   // === LESSON 17: Live and Dead Syllables ===
@@ -193,6 +201,14 @@ export const phase4Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll predict tones from syllable type',
+      examples: [
+        { thai: 'กา', romanization: 'gaa', meaning: 'crow (live, mid tone)' },
+        { thai: 'กับ', romanization: 'gàp', meaning: 'with (dead, low tone)' },
+        { thai: 'ชาติ', romanization: 'châat', meaning: 'nation (dead)' },
+      ],
+    },
   },
 
   // === LESSON 18: Tone Rules Table ===
@@ -296,6 +312,14 @@ export const phase4Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll apply tone rules systematically',
+      examples: [
+        { thai: 'สูง', romanization: 'sǔung', meaning: 'tall, high' },
+        { thai: 'ต่ำ', romanization: 'dtàm', meaning: 'low' },
+        { thai: 'กลาง', romanization: 'glaang', meaning: 'middle' },
+      ],
+    },
   },
 
   // === LESSON 19: Tone Marks ===
@@ -427,6 +451,14 @@ export const phase4Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: ['mai_ek', 'mai_tho', 'mai_tri', 'mai_jattawa'],
+    skillPreview: {
+      heading: 'You\'ll read all four tone marks',
+      examples: [
+        { thai: 'ไม่', romanization: 'mâi', meaning: 'not (mai ek)' },
+        { thai: 'น้ำ', romanization: 'náam', meaning: 'water (mai toh)' },
+        { thai: 'ก๊ก', romanization: 'gók', meaning: 'faction (mai dtrii)' },
+      ],
+    },
   },
 
   // === LESSON 20: Tone Practice ===
@@ -529,5 +561,13 @@ export const phase4Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll read tones in real sentences',
+      examples: [
+        { thai: 'ใกล้', romanization: 'glâi', meaning: 'near (falling)' },
+        { thai: 'ไกล', romanization: 'glai', meaning: 'far (mid)' },
+        { thai: 'ม้าดี', romanization: 'máa dii', meaning: 'good horse' },
+      ],
+    },
   },
 ]

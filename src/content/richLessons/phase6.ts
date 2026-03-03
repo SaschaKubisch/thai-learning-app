@@ -111,6 +111,14 @@ export const phase6Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll greet and respond politely',
+      examples: [
+        { thai: 'สวัสดีครับ', romanization: 'sà-wàt-dii kráp', meaning: 'Hello (male)' },
+        { thai: 'สบายดีไหม', romanization: 'sà-baai dii mǎi', meaning: 'How are you?' },
+        { thai: 'ขอบคุณค่ะ', romanization: 'kàwp-kun kâ', meaning: 'Thank you (female)' },
+      ],
+    },
   },
 
   // === LESSON 27: At a Restaurant ===
@@ -231,6 +239,14 @@ export const phase6Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll order food in Thai',
+      examples: [
+        { thai: 'ขอข้าวผัดไก่', romanization: 'kǎw kâao pàt gài', meaning: 'I\'d like chicken fried rice' },
+        { thai: 'เผ็ดน้อย', romanization: 'pèt nóoy', meaning: 'mildly spicy' },
+        { thai: 'เช็คบิลด้วย', romanization: 'chék bin dûay', meaning: 'Check, please' },
+      ],
+    },
   },
 
   // === LESSON 28: Getting Around ===
@@ -353,6 +369,14 @@ export const phase6Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll navigate in Thai',
+      examples: [
+        { thai: 'ตรงไป', romanization: 'dtrong bpai', meaning: 'go straight' },
+        { thai: 'เลี้ยวซ้าย', romanization: 'líaw sáai', meaning: 'turn left' },
+        { thai: 'อยู่ใกล้', romanization: 'yùu glâi', meaning: 'it\'s nearby' },
+      ],
+    },
   },
 
   // === LESSON 29: Shopping ===
@@ -467,6 +491,14 @@ export const phase6Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll bargain and discuss prices',
+      examples: [
+        { thai: 'เท่าไร', romanization: 'tâo-rài', meaning: 'how much?' },
+        { thai: 'ลดได้ไหม', romanization: 'lót dâai mǎi', meaning: 'can you lower the price?' },
+        { thai: 'แพงไป', romanization: 'paeng bpai', meaning: 'too expensive' },
+      ],
+    },
   },
 
   // === LESSON 30: Putting It All Together ===
@@ -583,5 +615,13 @@ export const phase6Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll follow a full Thai conversation',
+      examples: [
+        { thai: 'วันนี้ไปไหน', romanization: 'wan-níi bpai nǎi', meaning: 'Where are you going today?' },
+        { thai: 'ไปเที่ยวเชียงใหม่', romanization: 'bpai tîaw chiang mài', meaning: 'Going to visit Chiang Mai' },
+        { thai: 'อากาศดีมาก', romanization: 'aa-gàat dii mâak', meaning: 'The weather is very nice' },
+      ],
+    },
   },
 ]

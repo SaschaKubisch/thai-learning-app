@@ -92,6 +92,14 @@ export const phase5Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll read simple Thai sentences',
+      examples: [
+        { thai: 'ฉันกินข้าว', romanization: 'chǎn gin kâao', meaning: 'I eat rice' },
+        { thai: 'เขาไปตลาด', romanization: 'kǎo bpai dtà-làat', meaning: 'He goes to the market' },
+        { thai: 'แม่ทำอาหาร', romanization: 'mâe tam aa-hǎan', meaning: 'Mom cooks food' },
+      ],
+    },
   },
 
   // === LESSON 22: Negation ===
@@ -173,6 +181,14 @@ export const phase5Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll understand Thai negation',
+      examples: [
+        { thai: 'ไม่ชอบ', romanization: 'mâi châwp', meaning: 'don\'t like' },
+        { thai: 'ไม่ใช่', romanization: 'mâi châi', meaning: 'it\'s not' },
+        { thai: 'ยังไม่ได้ไป', romanization: 'yang mâi dâai bpai', meaning: 'haven\'t gone yet' },
+      ],
+    },
   },
 
   // === LESSON 23: Questions ===
@@ -263,6 +279,14 @@ export const phase5Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll read and form Thai questions',
+      examples: [
+        { thai: 'ไปไหน', romanization: 'bpai nǎi', meaning: 'Where are you going?' },
+        { thai: 'อร่อยไหม', romanization: 'à-ràwy mǎi', meaning: 'Is it delicious?' },
+        { thai: 'กี่บาท', romanization: 'gìi bàat', meaning: 'How much?' },
+      ],
+    },
   },
 
   // === LESSON 24: Tense and Time ===
@@ -346,6 +370,14 @@ export const phase5Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll express time in Thai',
+      examples: [
+        { thai: 'จะไป', romanization: 'jà bpai', meaning: 'will go' },
+        { thai: 'ไปแล้ว', romanization: 'bpai láew', meaning: 'already went' },
+        { thai: 'เคยกิน', romanization: 'kəəy gin', meaning: 'have eaten before' },
+      ],
+    },
   },
 
   // === LESSON 25: Adjectives and Descriptions ===
@@ -427,5 +459,13 @@ export const phase5Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll describe things in Thai',
+      examples: [
+        { thai: 'อาหารอร่อย', romanization: 'aa-hǎan à-ràwy', meaning: 'delicious food' },
+        { thai: 'บ้านใหญ่', romanization: 'bâan yài', meaning: 'big house' },
+        { thai: 'ถูกมาก', romanization: 'tùuk mâak', meaning: 'very cheap' },
+      ],
+    },
   },
 ]

@@ -129,6 +129,14 @@ export const phase1Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: ['kor_kai', 'jor_jaan', 'dor_dek'],
+    skillPreview: {
+      heading: 'You\'ll recognize your first Thai words',
+      examples: [
+        { thai: 'ไก่', romanization: 'gài', meaning: 'chicken' },
+        { thai: 'จาน', romanization: 'jaan', meaning: 'plate' },
+        { thai: 'เด็ก', romanization: 'dèk', meaning: 'child' },
+      ],
+    },
   },
 
   // === LESSON 2: Next 3 mid-class consonants ===
@@ -253,6 +261,14 @@ export const phase1Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: ['dtor_dtao', 'bor_baimai', 'por_plaa'],
+    skillPreview: {
+      heading: 'You\'ll read more Thai words',
+      examples: [
+        { thai: 'เต่า', romanization: 'dtào', meaning: 'turtle' },
+        { thai: 'ใบไม้', romanization: 'bai-máai', meaning: 'leaf' },
+        { thai: 'ปลา', romanization: 'bplaa', meaning: 'fish' },
+      ],
+    },
   },
 
   // === LESSON 3: Last 3 mid-class consonants ===
@@ -378,6 +394,14 @@ export const phase1Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: ['dor_chada', 'dtor_patak', 'or_ang'],
+    skillPreview: {
+      heading: 'You\'ll know all 9 mid-class consonants',
+      examples: [
+        { thai: 'อ่าง', romanization: 'àang', meaning: 'basin' },
+        { thai: 'ชฎา', romanization: 'chá-daa', meaning: 'headdress' },
+        { thai: 'ปฏัก', romanization: 'bpà-dtàk', meaning: 'goad' },
+      ],
+    },
   },
 
   // === LESSON 4: Consonant Classes Introduction ===
@@ -474,6 +498,14 @@ export const phase1Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll understand the three consonant classes',
+      examples: [
+        { thai: 'กา', romanization: 'gaa', meaning: 'crow (mid class)' },
+        { thai: 'ขา', romanization: 'kǎa', meaning: 'leg (high class)' },
+        { thai: 'คา', romanization: 'kaa', meaning: 'to be stuck (low class)' },
+      ],
+    },
   },
 
   // === LESSON 5: First High-Class Consonants ===
@@ -602,5 +634,13 @@ export const phase1Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: ['khor_khai', 'chor_ching', 'thor_thung'],
+    skillPreview: {
+      heading: 'You\'ll read high-class consonant words',
+      examples: [
+        { thai: 'ไข่', romanization: 'kài', meaning: 'egg' },
+        { thai: 'ผม', romanization: 'pǒm', meaning: 'I (male)' },
+        { thai: 'สี', romanization: 'sǐi', meaning: 'color' },
+      ],
+    },
   },
 ]
