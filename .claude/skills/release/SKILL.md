@@ -1,10 +1,11 @@
+---
+name: release
+description: Create a versioned release with notes, tagging, and GitHub release. Use this skill whenever the user wants to release, deploy, cut a release, merge and release, ship it, create a release, tag a new version, or any request to publish a new version of the app. Also use when the user says "release dev to main", "push to production", or asks to merge a development branch for release. Triggers include phrases like "release", "deploy", "ship it", "new version", "cut a release", "merge and release", "release to main", "push to production", or any transition from development to a tagged production release.
+---
+
 # Release Skill
 
 Create a versioned release: merge to main, write release notes, tag, push, and create a GitHub release.
-
-## Trigger
-
-Use this skill when the user says "release", "deploy", "cut a release", "merge and release", "ship it", "create a release", "new version", or any request to publish a new version of the app.
 
 ## Workflow
 
