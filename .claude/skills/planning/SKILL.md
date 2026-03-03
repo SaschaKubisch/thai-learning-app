@@ -1,6 +1,6 @@
 ---
 name: planning
-description: Create a comprehensive planning document for a feature or project. Use this skill whenever the user wants to plan a feature, create a planning doc, or needs a combined brainstorm + PRD + spec in a single document. Triggers include phrases like "plan this", "create a plan", "planning document", "plan the feature", "write a plan for", or any request for a comprehensive planning document that combines ideation, requirements, and technical design -- even if the user doesn't explicitly say "planning."
+description: Create a comprehensive planning document for a feature or project. Use this skill BEFORE any implementation begins. Triggers include (1) explicit planning requests like "plan this", "create a plan", "planning document", "plan the feature", "write a plan for"; (2) implementation requests that imply a plan exists or was discussed, like "implement the following plan", "implement this plan", "let's build this", or any request that includes a detailed plan inline -- the plan must be captured as a planning document FIRST before writing any code; (3) any request for a comprehensive planning document that combines ideation, requirements, and technical design. When a user provides a plan and asks to implement it, ALWAYS create the planning document first, then proceed to implementation.
 ---
 
 # Planning Document
@@ -216,6 +216,8 @@ Any supporting material: reference links, data tables, extended examples. Keep t
 
 ## Important behaviors
 
+- **Plan-first, always.** When a user provides a plan (inline in a message, from plan mode, or referenced from a file) and asks to implement it, the FIRST action is to save it as a planning document at `docs/YYMMDD-<topic>.md`. Do not start reading code, editing files, or running commands until the plan is documented. This applies even when the user says "implement this" -- the plan document is the receipt that captures what was agreed upon.
+- **Capture inline plans verbatim.** If the user pastes a detailed plan into the chat, save it as-is into the planning document (with light formatting cleanup if needed). Do not re-interview the user or run through the three-phase conversation flow -- that is for when a plan does not yet exist.
 - **One document, three levels of thinking.** The planning document is not three documents stapled together. Each section should flow into the next. The brainstorm thinking informs the requirements, and the requirements drive the technical design. Cross-reference between sections rather than repeating information.
 - **Mermaid diagrams are required where they add clarity.** At minimum, include a diagram for the architecture overview and at least one user workflow. Add more where they help -- but never where they don't.
 - **Use the YYMMDD prefix.** The filename must start with today's date in YYMMDD format. This is the project's standard for planning documents.

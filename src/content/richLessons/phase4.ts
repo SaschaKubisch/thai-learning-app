@@ -101,14 +101,11 @@ export const phase4Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'Thai has 5 tones. How does this compare to other tonal languages?',
-        options: [
-          'Thai has the most tones of any language',
-          'Mandarin has 4 tones, Cantonese has 6-9 tones',
-          'All Asian languages have exactly 5 tones',
-          'Only Thai uses tones',
-        ],
-        correctIndex: 1,
+        prompt: 'Which tone does ม้า (horse) use? Listen for the pitch pattern.',
+        promptThai: 'ม้า',
+        options: ['Mid tone (flat)', 'Low tone (drops)', 'High tone (rises high)', 'Falling tone (drops sharply)'],
+        correctIndex: 2,
+        audioText: 'ม้า',
       },
       {
         type: 'multiple_choice',
@@ -633,14 +630,11 @@ export const phase4Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'Thai people write 555 in text messages to mean "hahaha." Why?',
-        options: [
-          '5 is a lucky number',
-          'The number 5 in Thai is ห้า (haa), so 555 = haa haa haa',
-          'It looks like a laughing face',
-          '5 sounds like "ha" in English',
-        ],
+        prompt: 'Analyze ดี: ด is mid class, -ี is a long vowel (live syllable), no tone mark. What tone is it?',
+        promptThai: 'ดี',
+        options: ['Low tone', 'Mid tone', 'High tone', 'Falling tone'],
         correctIndex: 1,
+        audioText: 'ดี',
       },
     ],
     srsItemIds: ['w_naam', 'w_haa', 'w_dii'],

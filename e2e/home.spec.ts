@@ -48,7 +48,7 @@ test.describe('Home Screen', () => {
 
   test('future lessons show skill preview on click', async ({ page }) => {
     // Click a future lesson (R02 should be future since we haven't completed R01)
-    await page.locator('button:has-text("More Mid-Class Consonants")').click()
+    await page.locator('button:has-text("More Consonants, More Sounds")').click()
     // Should show the skill preview modal
     await expect(page.locator('text=Start from Your First Thai Letters')).toBeVisible()
     await page.screenshot({ path: 'e2e/screenshots/home-skill-preview.png', fullPage: true })
