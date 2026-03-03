@@ -179,6 +179,12 @@ export const phase1Lessons: RichLesson[] = [
         correctIndex: 3,
         audioText: 'จาน',
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'Thai has 44 consonants. How many does English have?',
+        options: ['21', '26', '33', '44'],
+        correctIndex: 0,
+      },
     ],
     srsItemIds: ['kor_kai', 'jor_jaan', 'dor_dek', 'w_kai', 'w_jaan', 'w_dii'],
     skillPreview: {
@@ -362,6 +368,12 @@ export const phase1Lessons: RichLesson[] = [
         options: ['good house', 'good fish', 'good eyesight', 'good plate'],
         correctIndex: 2,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'The aspirated/unaspirated distinction in Thai is also found in which other languages?',
+        options: ['French and Spanish', 'Hindi, Korean, and Chinese', 'German and Dutch', 'Italian and Portuguese'],
+        correctIndex: 1,
+      },
     ],
     srsItemIds: ['dtor_dtao', 'bor_baimai', 'por_plaa', 'w_dtaa', 'w_baan', 'w_bplaa'],
     skillPreview: {
@@ -525,6 +537,12 @@ export const phase1Lessons: RichLesson[] = [
         options: ['ก', 'บ', 'ต', 'อ'],
         correctIndex: 3,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'The rare consonants ฎ and ฏ appear mostly in words borrowed from which languages?',
+        options: ['Chinese and Japanese', 'English and French', 'Pali and Sanskrit', 'Khmer and Lao'],
+        correctIndex: 2,
+      },
     ],
     srsItemIds: ['dor_chada', 'dtor_patak', 'or_ang', 'w_aa'],
     skillPreview: {
@@ -656,6 +674,12 @@ export const phase1Lessons: RichLesson[] = [
         prompt: 'กา (crow) has a mid tone because ก is what class?',
         options: ['Low class', 'High class', 'Mid class', 'Special class'],
         correctIndex: 2,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'The Thai script was adapted from which writing system around 1283 CE?',
+        options: ['Chinese characters', 'Khmer script', 'Devanagari', 'Burmese script'],
+        correctIndex: 1,
       },
     ],
     srsItemIds: ['w_kaa'],
@@ -838,6 +862,12 @@ export const phase1Lessons: RichLesson[] = [
         type: 'multiple_choice',
         prompt: 'Which consonant makes the "ch" sound and is high class?',
         options: ['จ', 'ฉ', 'ช', 'ก'],
+        correctIndex: 1,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'You know ไก่ (chicken) and ไข่ (egg). The Thai expression ไก่กับไข่ is similar to which English expression?',
+        options: ['Killing two birds with one stone', 'The chicken and the egg', 'Don\'t count your chickens', 'A bird in the hand'],
         correctIndex: 1,
       },
     ],

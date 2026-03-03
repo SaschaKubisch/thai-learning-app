@@ -109,8 +109,30 @@ export const phase6Lessons: RichLesson[] = [
         options: ['Goodbye', 'I\'m fine / comfortable', 'I\'m sorry', 'Thank you very much'],
         correctIndex: 1,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'สวัสดี was officially adopted as a greeting in the 1940s. Before that, Thai people commonly greeted each other with...',
+        options: [
+          'หวัดดี (watdii)',
+          'กินข้าวหรือยัง (Have you eaten yet?)',
+          'สบายดีไหม (How are you?)',
+          'They did not greet each other',
+        ],
+        correctIndex: 1,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'The "wai" is the Thai gesture where you press your palms together. When do you NOT need to wai?',
+        options: [
+          'When greeting an elder',
+          'When thanking someone',
+          'When receiving your change from a cashier at a convenience store',
+          'When meeting a teacher',
+        ],
+        correctIndex: 2,
+      },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_khrap', 'w_kha', 'w_khon'],
     skillPreview: {
       heading: 'You\'ll greet and respond politely',
       examples: [
@@ -237,8 +259,30 @@ export const phase6Lessons: RichLesson[] = [
         options: ['No', 'Maybe', 'Sure / Can do', 'I don\'t know'],
         correctIndex: 2,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'In Thai dining culture, which utensils are typically used?',
+        options: [
+          'Chopsticks only',
+          'Fork and knife',
+          'Fork and spoon (spoon in the right hand)',
+          'Hands only',
+        ],
+        correctIndex: 2,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'How would you politely order water at a restaurant?',
+        options: [
+          'น้ำ! (water!)',
+          'ขอน้ำครับ/ค่ะ (May I have water, please)',
+          'เอาน้ำไป (take water away)',
+          'ดื่มน้ำ (drink water)',
+        ],
+        correctIndex: 1,
+      },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_khaw', 'w_aroi', 'w_phet', 'w_naam', 'w_gin'],
     skillPreview: {
       heading: 'You\'ll order food in Thai',
       examples: [
@@ -367,8 +411,25 @@ export const phase6Lessons: RichLesson[] = [
         options: ['ไกลไหม', 'ใกล้ไหม', 'ไปไหน', 'อยู่ที่ไหน'],
         correctIndex: 0,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'You see a sign that says ซ้าย with an arrow. What should you do?',
+        options: ['Go straight', 'Turn right', 'Turn left', 'Go back'],
+        correctIndex: 2,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'ไปไหน (Where are you going?) is often used as a casual greeting in Thai. A common lighthearted answer is...',
+        options: [
+          'ไม่ไป (not going)',
+          'ไปเที่ยว (going out / going for fun)',
+          'ไม่รู้ (I don\'t know)',
+          'ไปทำงาน (going to work)',
+        ],
+        correctIndex: 1,
+      },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_saai', 'w_khwaa', 'w_trong', 'w_klai', 'w_klai_near', 'w_bpai'],
     skillPreview: {
       heading: 'You\'ll navigate in Thai',
       examples: [
@@ -489,8 +550,30 @@ export const phase6Lessons: RichLesson[] = [
         options: ['I don\'t want it', 'I\'ll take it', 'Give me a discount', 'It\'s too much'],
         correctIndex: 1,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'Where should you NOT try to bargain in Thailand?',
+        options: [
+          'Street markets',
+          'Night bazaars',
+          '7-Eleven stores and shopping malls',
+          'Floating markets',
+        ],
+        correctIndex: 2,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'How would you say "50 baht" in Thai?',
+        options: [
+          'ห้าบาท',
+          'สิบบาท',
+          'ห้าสิบบาท',
+          'ห้าร้อยบาท',
+        ],
+        correctIndex: 2,
+      },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_thao_rai', 'w_phaeng', 'w_thuuk', 'w_bat', 'w_suue', 'w_haa', 'w_sip'],
     skillPreview: {
       heading: 'You\'ll bargain and discuss prices',
       examples: [
@@ -613,8 +696,30 @@ export const phase6Lessons: RichLesson[] = [
         ],
         correctIndex: 1,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'The phrase ไม่เป็นไร (never mind / no problem) reflects a Thai cultural value of...',
+        options: [
+          'Strictness and discipline',
+          'Competition and ambition',
+          'Tolerance and flexibility',
+          'Secrecy and privacy',
+        ],
+        correctIndex: 2,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'You need to ask where a restaurant is. How do you read ขอโทษครับ ร้านอาหารอยู่ที่ไหนครับ?',
+        options: [
+          'Thank you, the food is delicious',
+          'Excuse me, where is the restaurant?',
+          'Hello, I want to eat',
+          'Sorry, I don\'t understand',
+        ],
+        correctIndex: 1,
+      },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_thii_nai', 'w_aroi', 'w_phaeng', 'w_thuuk', 'w_saai', 'w_khwaa'],
     skillPreview: {
       heading: 'You\'ll follow a full Thai conversation',
       examples: [

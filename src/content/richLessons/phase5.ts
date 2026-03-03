@@ -90,8 +90,25 @@ export const phase5Lessons: RichLesson[] = [
         options: ['drink', 'go', 'eat', 'come'],
         correctIndex: 2,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'To build แม่กินข้าว (Mom eats rice), you use SVO order. Which part is the verb?',
+        options: ['แม่ (mom)', 'กิน (eat)', 'ข้าว (rice)', 'None of them'],
+        correctIndex: 1,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'Unlike English, French, or Spanish, Thai verbs do not conjugate. What does this mean?',
+        options: [
+          'Thai has no verbs',
+          'The verb form stays the same regardless of subject or tense',
+          'Thai verbs change based on the speaker\'s gender',
+          'Thai only uses past tense',
+        ],
+        correctIndex: 1,
+      },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_chan', 'w_gin', 'w_khaao', 'w_khao_he', 'w_duem', 'w_naam'],
     skillPreview: {
       heading: 'You\'ll read simple Thai sentences',
       examples: [
@@ -179,8 +196,19 @@ export const phase5Lessons: RichLesson[] = [
         options: ['Mid', 'Low', 'Falling', 'High'],
         correctIndex: 2,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'Someone asks กินข้าวไหม (Are you eating?). How would you politely decline?',
+        options: [
+          'กินข้าว (eat rice)',
+          'ไม่กินครับ/ค่ะ (not eating)',
+          'กินไหม (eating?)',
+          'ข้าวดี (good rice)',
+        ],
+        correctIndex: 1,
+      },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_mai', 'w_khrap', 'w_kha'],
     skillPreview: {
       heading: 'You\'ll understand Thai negation',
       examples: [
@@ -277,8 +305,25 @@ export const phase5Lessons: RichLesson[] = [
         options: ['นี่ดีไหม', 'นี่อะไร', 'นี่ไม่ดี', 'นี่ไป'],
         correctIndex: 1,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'You point at something at a market stall and want to ask "What is this?" Which phrase do you use?',
+        options: ['ไปไหน', 'นี่อะไร', 'เท่าไหร่', 'สบายดีไหม'],
+        correctIndex: 1,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'Thai adds question particles at the end of a sentence, similar to which other languages?',
+        options: [
+          'French and German',
+          'Japanese and Korean',
+          'Spanish and Italian',
+          'English and Dutch',
+        ],
+        correctIndex: 1,
+      },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_arai', 'w_mai_question', 'w_nii', 'w_thii_nai'],
     skillPreview: {
       heading: 'You\'ll read and form Thai questions',
       examples: [
@@ -368,8 +413,14 @@ export const phase5Lessons: RichLesson[] = [
         options: ['ฉันจะไป', 'ฉันไปแล้ว', 'ฉันไม่ไป', 'ฉันกำลังไป'],
         correctIndex: 1,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'How would you say "I already went to the market" using ฉัน + ไป + ตลาด + แล้ว?',
+        options: ['แล้วฉันไปตลาด', 'ฉันไปตลาดแล้ว', 'ฉันแล้วไปตลาด', 'ตลาดฉันไปแล้ว'],
+        correctIndex: 1,
+      },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_ja', 'w_laeo', 'w_kamlang', 'w_bpai'],
     skillPreview: {
       heading: 'You\'ll express time in Thai',
       examples: [
@@ -457,8 +508,14 @@ export const phase5Lessons: RichLesson[] = [
         options: ['ใหญ่บ้าน (big house)', 'บ้านใหญ่ (house big)', 'บ้านมาก (house very)', 'ใหญ่มากบ้าน'],
         correctIndex: 1,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'You want to describe spicy food. How do you say "very spicy" using เผ็ด + มาก?',
+        options: ['มากเผ็ด', 'เผ็ดมาก', 'ไม่เผ็ดมาก', 'เผ็ดไม่มาก'],
+        correctIndex: 1,
+      },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_aroi', 'w_maak', 'w_yen', 'w_phet'],
     skillPreview: {
       heading: 'You\'ll describe things in Thai',
       examples: [
