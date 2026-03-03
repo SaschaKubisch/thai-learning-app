@@ -13,10 +13,7 @@ export default defineConfig({
     trace: 'on',
     screenshot: 'on',
     video: 'on',
-    headless: false,
-    launchOptions: {
-      slowMo: 100,
-    },
+    headless: true,
   },
   projects: [
     {
