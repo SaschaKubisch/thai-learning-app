@@ -72,9 +72,11 @@ export const phase4Lessons: RichLesson[] = [
     assessment: [
       {
         type: 'multiple_choice',
-        prompt: 'How many tones does Thai have?',
-        options: ['3', '4', '5', '7'],
-        correctIndex: 2,
+        prompt: 'มา (maa) is mid tone. What does it mean?',
+        promptThai: 'มา',
+        options: ['horse', 'to come', 'dog', 'mother'],
+        correctIndex: 1,
+        audioText: 'มา',
       },
       {
         type: 'multiple_choice',
@@ -473,9 +475,11 @@ export const phase4Lessons: RichLesson[] = [
     assessment: [
       {
         type: 'multiple_choice',
-        prompt: 'How many tone marks does Thai have?',
-        options: ['2', '3', '4', '5'],
+        prompt: 'What tone does ก้า have? (ก = mid class, mai tho)',
+        promptThai: 'ก้า',
+        options: ['Mid tone', 'Low tone', 'Falling tone', 'High tone'],
         correctIndex: 2,
+        audioText: 'ก้า',
       },
       {
         type: 'multiple_choice',

@@ -98,15 +98,9 @@ export const phase5Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'Read the sentence: เขาดื่มน้ำ -- What does it mean?',
-        promptThai: 'เขาดื่มน้ำ',
-        options: [
-          'I eat rice',
-          'He drinks water',
-          'She cooks food',
-          'They go to the market',
-        ],
-        correctIndex: 1,
+        prompt: 'How do you say "Mom eats rice" using SVO order?',
+        options: ['กินข้าวแม่', 'ข้าวแม่กิน', 'แม่กินข้าว', 'กินแม่ข้าว'],
+        correctIndex: 2,
       },
     ],
     srsItemIds: ['w_chan', 'w_gin', 'w_khaao', 'w_khao_he', 'w_duem', 'w_naam'],

@@ -261,14 +261,9 @@ export const phase6Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'In Thai dining culture, which utensils are typically used?',
-        options: [
-          'Chopsticks only',
-          'Fork and knife',
-          'Fork and spoon (spoon in the right hand)',
-          'Hands only',
-        ],
-        correctIndex: 2,
+        prompt: 'What does สั่งอะไรดี mean?',
+        options: ['Where is the menu?', 'What would you like to order?', 'Is it spicy?', 'How much?'],
+        correctIndex: 1,
       },
       {
         type: 'multiple_choice',
@@ -552,14 +547,9 @@ export const phase6Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'Where should you NOT try to bargain in Thailand?',
-        options: [
-          'Street markets',
-          'Night bazaars',
-          '7-Eleven stores and shopping malls',
-          'Floating markets',
-        ],
-        correctIndex: 2,
+        prompt: 'What does แพงไป mean?',
+        options: ['Very cheap', 'Too expensive', 'Good price', 'How much?'],
+        correctIndex: 1,
       },
       {
         type: 'multiple_choice',

@@ -1,13 +1,13 @@
 import type { RichLesson } from '../lessonTypes'
 
-// Phase 3: Reading Fluency (Lessons 11-15)
+// Phase 3: Complete Alphabet & Reading (Lessons 11-15)
 
 export const phase3Lessons: RichLesson[] = [
-  // === LESSON 11: Remaining Common Consonants ===
+  // === LESSON 11: High and Low Pairs + ศ ษ ===
   {
     id: 'R11',
-    title: 'More High and Low Consonants',
-    goal: 'Learn 5 more consonants to cover nearly all common ones: ฝ (faw, high), ฉ (chaw, high), พ (paw, low), ฟ (faw, low), ห (haw, high).',
+    title: 'Sound Twins Across Classes',
+    goal: 'Learn 7 consonants including same-sound pairs across classes: ฝ/ฟ (f), ฉ/ช (ch), ผ/พ (ph), ห (h), plus ศ and ษ (both "s" like ส).',
     phase: 'reading',
     order: 10,
     difficulty: 'beginner',
@@ -16,7 +16,7 @@ export const phase3Lessons: RichLesson[] = [
       {
         kind: 'text',
         content:
-          'Five more consonants to round out the common set. After this lesson you will know most of the consonants you need for everyday Thai reading.\n\nNotice that some sounds appear in both high and low class: ฝ (f, high class) and ฟ (f, low class) make the same sound but are different letters in different classes.',
+          'Seven more consonants to learn. A key pattern: Thai has consonant **pairs** that make the same sound but belong to different classes. This affects tone.\n\nWe also meet ศ and ษ -- two more letters that make the "s" sound, just like ส. Thai has three "s" consonants because it borrowed letters from Sanskrit.',
       },
       {
         kind: 'info_card',
@@ -53,22 +53,38 @@ export const phase3Lessons: RichLesson[] = [
             thai: 'ห',
             romanization: 'haw',
             english: '"h" high class',
-            detail: 'Keyword: หีบ hip = chest.',
+            detail: 'Keyword: หีบ hiip = chest/box.',
             audioText: 'หอ',
           },
         ],
       },
       {
-        kind: 'rule',
-        rule: 'Same sound, different class: ฝ (high) and ฟ (low) both make "f". ฉ (high) and ช (low, learned earlier) both make "ch". ผ (high) and พ (low) both make "p" (aspirated). You must memorize which class each belongs to.',
-        examples: [
-          { thai: 'ฝา', romanization: 'faa (high)', english: 'lid' },
+        kind: 'info_card',
+        items: [
           {
-            thai: 'ฟา',
-            romanization: 'faa (low)',
-            english: 'same sound different class',
+            thai: 'ศ',
+            romanization: 'saw',
+            english: '"s" high class -- from Sanskrit',
+            detail: 'Keyword: ศาลา saalaa = pavilion. Same sound as ส.',
+            audioText: 'ศอ',
           },
-          { thai: 'พา', romanization: 'phaa (low)', english: 'to take someone' },
+          {
+            thai: 'ษ',
+            romanization: 'saw',
+            english: '"s" high class -- from Sanskrit',
+            detail: 'Keyword: ฤๅษี ruue-sii = hermit. Same sound as ส and ศ.',
+            audioText: 'ษอ',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'Same-sound pairs across classes: ฝ (high) / ฟ (low) = "f". ฉ (high) / ช (low) = "ch". ผ (high) / พ (low) = "ph". And three "s" letters: ส ศ ษ (all high class). The class affects tone, not sound.',
+        examples: [
+          { thai: 'ฝา', romanization: 'fǎa (high class)', english: 'lid' },
+          { thai: 'ฟา', romanization: 'faa (low class)', english: 'same sound, different class' },
+          { thai: 'ศูนย์', romanization: 'sǔun', english: 'zero (uses ศ)' },
+          { thai: 'ภาษา', romanization: 'phaa-sǎa', english: 'language (uses ษ)' },
         ],
       },
       {
@@ -76,18 +92,23 @@ export const phase3Lessons: RichLesson[] = [
         items: [
           {
             thai: 'ฝา',
-            romanization: 'faa',
+            romanization: 'fǎa',
             english: 'lid',
           },
           {
-            thai: 'ผ้า',
-            romanization: 'phâa',
-            english: 'cloth',
+            thai: 'พา',
+            romanization: 'phaa',
+            english: 'to take someone',
           },
           {
             thai: 'หา',
-            romanization: 'haa',
+            romanization: 'hǎa',
             english: 'to look for',
+          },
+          {
+            thai: 'ศูนย์',
+            romanization: 'sǔun',
+            english: 'zero / center',
           },
         ],
       },
@@ -104,11 +125,11 @@ export const phase3Lessons: RichLesson[] = [
           },
           {
             type: 'multiple_choice',
-            prompt: 'What sound does ห make?',
-            promptThai: 'ห',
-            options: ['faw', 'paw', 'haw', 'chaw'],
-            correctIndex: 2,
-            audioText: 'หอ',
+            prompt: 'What sound does ศ make?',
+            promptThai: 'ศ',
+            options: ['faw', 'saw', 'haw', 'chaw'],
+            correctIndex: 1,
+            audioText: 'ศอ',
           },
           {
             type: 'multiple_choice',
@@ -121,18 +142,18 @@ export const phase3Lessons: RichLesson[] = [
           {
             type: 'match',
             pairs: [
-              { left: 'ฝ', right: 'f (high class)' },
-              { left: 'ฟ', right: 'f (low class)' },
-              { left: 'พ', right: 'p aspirated (low)' },
-              { left: 'ห', right: 'h (high class)' },
+              { left: 'ฝ / ฟ', right: '"f" sound pair' },
+              { left: 'ฉ / ช', right: '"ch" sound pair' },
+              { left: 'ผ / พ', right: '"ph" sound pair' },
+              { left: 'ส / ศ / ษ', right: '"s" (all high class)' },
             ],
           },
           {
             type: 'tap_to_reveal',
             cards: [
-              { front: 'ฝา', back: 'faa -- lid', audioText: 'ฝา' },
-              { front: 'หา', back: 'haa -- to look for', audioText: 'หา' },
-              { front: 'พา', back: 'phaa -- to take someone', audioText: 'พา' },
+              { front: 'ฝา', back: 'fǎa -- lid', audioText: 'ฝา' },
+              { front: 'หา', back: 'hǎa -- to look for', audioText: 'หา' },
+              { front: 'ศูนย์', back: 'sǔun -- zero', audioText: 'ศูนย์' },
             ],
           },
         ],
@@ -141,20 +162,19 @@ export const phase3Lessons: RichLesson[] = [
     assessment: [
       {
         type: 'multiple_choice',
-        prompt: 'What sound does ฝ make?',
-        options: ['faw', 'paw', 'haw', 'chaw'],
-        correctIndex: 0,
-      },
-      {
-        type: 'multiple_choice',
         prompt: 'What sound does พ make?',
         options: ['paw (aspirated)', 'bpaw', 'faw', 'haw'],
         correctIndex: 0,
       },
       {
         type: 'multiple_choice',
-        prompt: 'What sound does ห make?',
-        options: ['haw', 'faw', 'chaw', 'paw'],
+        prompt: 'ฝ and ฟ both make the "f" sound. What is different about them?',
+        options: [
+          'Their consonant class (high vs low)',
+          'Their vowel',
+          'Their meaning',
+          'Nothing',
+        ],
         correctIndex: 0,
       },
       {
@@ -167,6 +187,12 @@ export const phase3Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
+        prompt: 'Thai has three consonants that all make the "s" sound. Which are they?',
+        options: ['ส ซ ศ', 'ส ศ ษ', 'ซ ศ ษ', 'ส ซ ษ'],
+        correctIndex: 1,
+      },
+      {
+        type: 'multiple_choice',
         prompt: 'How do you read พา?',
         promptThai: 'พา',
         options: ['phaa', 'faa', 'haa', 'bpaa'],
@@ -175,15 +201,9 @@ export const phase3Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt:
-          'ฝ and ฟ both make the "f" sound. What is different about them?',
-        options: [
-          'Their consonant class (high vs low)',
-          'Their vowel',
-          'Their meaning',
-          'Nothing',
-        ],
-        correctIndex: 0,
+        prompt: 'What does ศูนย์ mean?',
+        options: ['lid', 'language', 'zero / center', 'teeth'],
+        correctIndex: 2,
       },
     ],
     srsItemIds: [
@@ -192,24 +212,27 @@ export const phase3Lessons: RichLesson[] = [
       'phor_phaan',
       'for_fan',
       'hor_hip',
+      'sor_sala',
+      'sor_ruesi',
       'w_faa',
       'w_phaa',
+      'w_suun',
     ],
     skillPreview: {
-      heading: "You'll read most common Thai consonants",
+      heading: "You'll learn same-sound consonant pairs",
       examples: [
-        { thai: 'ฝา', romanization: 'faa', meaning: 'lid' },
-        { thai: 'พา', romanization: 'phaa', meaning: 'to take along' },
-        { thai: 'หา', romanization: 'haa', meaning: 'to look for' },
+        { thai: 'ฝา', romanization: 'fǎa', meaning: 'lid (high class f)' },
+        { thai: 'ฟัน', romanization: 'fan', meaning: 'teeth (low class f)' },
+        { thai: 'ศูนย์', romanization: 'sǔun', meaning: 'zero' },
       ],
     },
   },
 
-  // === LESSON 12: Reading Real Words ===
+  // === LESSON 12: Compound Vowels + ฐ ฮ ===
   {
     id: 'R12',
-    title: 'Reading Real Words',
-    goal: 'Read complete Thai words. Vocabulary meaning testing starts here.',
+    title: 'Compound Vowels',
+    goal: 'Learn compound vowels เ-ีย (ia), -ัว (ua), เ-ือ (uea), เ-อ (oe). Learn final common consonants ฐ (high) and ฮ (low).',
     phase: 'reading',
     order: 11,
     difficulty: 'beginner',
@@ -218,7 +241,409 @@ export const phase3Lessons: RichLesson[] = [
       {
         kind: 'text',
         content:
-          'You now know enough consonants and vowels to read real Thai words. Let us combine everything you have learned.\n\nFrom this lesson forward, we will practice not just HOW to read words, but WHAT they mean. These are some of the most common words in Thai.',
+          'Some Thai vowels combine two vowel sounds into one. These **compound vowels** appear in many everyday words.\n\nWe also learn the last two common consonants: ฐ (high class "th") and ฮ (low class "h").',
+      },
+      {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'เ-ีย',
+            romanization: 'ia',
+            english: '"ia" as in "via"',
+            detail: 'เรียน = riian (to study). The เ- goes before and -ีย after the consonant.',
+            audioText: 'เรียน',
+          },
+          {
+            thai: '-ัว',
+            romanization: 'ua',
+            english: '"ua" -- ooh-ah blended',
+            detail: 'ตัว = dtua (body/classifier). Short "a" + "w" sound.',
+            audioText: 'ตัว',
+          },
+          {
+            thai: 'เ-ือ',
+            romanization: 'uea',
+            english: '"uea" -- ue + ah',
+            detail: 'เมือง = muueang (city). Combines the "ue" sound with "a".',
+            audioText: 'เมือง',
+          },
+          {
+            thai: 'เ-อ',
+            romanization: 'oe',
+            english: '"oe" -- as in French "deux"',
+            detail: 'เธอ = thoe (you/her). The เ- goes before and -อ after.',
+            audioText: 'เธอ',
+          },
+        ],
+      },
+      {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'ฐ',
+            romanization: 'taw',
+            english: '"th" aspirated -- high class',
+            detail: 'Keyword: ฐาน thǎan = base/foundation.',
+            audioText: 'ฐอ',
+          },
+          {
+            thai: 'ฮ',
+            romanization: 'haw',
+            english: '"h" -- low class',
+            detail: 'Keyword: นกฮูก nok-huuk = owl. The only low-class "h".',
+            audioText: 'ฮอ',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'Compound vowels combine two vowel sounds. They wrap around the consonant: เ-ีย has เ- before and -ีย after. เ-ือ has เ- before and -ือ above/after. These are long vowels and very common.',
+        examples: [
+          { thai: 'เรียน', romanization: 'riian', english: 'to study' },
+          { thai: 'ตัว', romanization: 'dtua', english: 'body / classifier' },
+          { thai: 'เมือง', romanization: 'muueang', english: 'city / country' },
+          { thai: 'เธอ', romanization: 'thoe', english: 'you / her' },
+        ],
+      },
+      {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'เสีย',
+            romanization: 'sǐia',
+            english: 'broken / spoiled',
+            audioText: 'เสีย',
+          },
+          {
+            thai: 'หัว',
+            romanization: 'hǔa',
+            english: 'head',
+            audioText: 'หัว',
+          },
+          {
+            thai: 'เดือน',
+            romanization: 'duuean',
+            english: 'month',
+            audioText: 'เดือน',
+          },
+          {
+            thai: 'สถานี',
+            romanization: 'sa-thǎa-nii',
+            english: 'station',
+            detail: 'Uses ฐ. สถานีรถไฟ = train station.',
+            audioText: 'สถานี',
+          },
+          {
+            thai: 'ฮา',
+            romanization: 'haa',
+            english: 'ha / funny',
+            detail: 'Uses ฮ. ตลก-ฮา = funny.',
+            audioText: 'ฮา',
+          },
+        ],
+      },
+      {
+        kind: 'practice',
+        exercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'How do you read this?',
+            promptThai: 'เรียน',
+            options: ['raan', 'riian', 'ruuan', 'reen'],
+            correctIndex: 1,
+            audioText: 'เรียน',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does เรียน mean?',
+            options: ['to eat', 'to study', 'city', 'you'],
+            correctIndex: 1,
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'How do you read this?',
+            promptThai: 'เมือง',
+            options: ['maang', 'miiang', 'muueang', 'moong'],
+            correctIndex: 2,
+            audioText: 'เมือง',
+          },
+          {
+            type: 'match',
+            pairs: [
+              { left: 'เ-ีย', right: 'ia (เรียน = study)' },
+              { left: '-ัว', right: 'ua (ตัว = body)' },
+              { left: 'เ-ือ', right: 'uea (เมือง = city)' },
+              { left: 'เ-อ', right: 'oe (เธอ = you/her)' },
+            ],
+          },
+          {
+            type: 'tap_to_reveal',
+            cards: [
+              { front: 'เดือน', back: 'duuean -- month', audioText: 'เดือน' },
+              { front: 'หัว', back: 'hǔa -- head', audioText: 'หัว' },
+              { front: 'สถานี', back: 'sa-thǎa-nii -- station', audioText: 'สถานี' },
+            ],
+          },
+        ],
+      },
+    ],
+    assessment: [
+      {
+        type: 'multiple_choice',
+        prompt: 'How do you read เรียน?',
+        promptThai: 'เรียน',
+        options: ['raan', 'riian', 'ruuan', 'reen'],
+        correctIndex: 1,
+        audioText: 'เรียน',
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'What does เรียน mean?',
+        promptThai: 'เรียน',
+        options: ['to eat', 'to study', 'city', 'month'],
+        correctIndex: 1,
+        audioText: 'เรียน',
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'What does เมือง mean?',
+        promptThai: 'เมือง',
+        options: ['month', 'you/her', 'city / country', 'head'],
+        correctIndex: 2,
+        audioText: 'เมือง',
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'What does สถานี mean?',
+        options: ['language', 'station', 'bank', 'restaurant'],
+        correctIndex: 1,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'How do you read เธอ?',
+        promptThai: 'เธอ',
+        options: ['thii', 'thoe', 'thee', 'thaa'],
+        correctIndex: 1,
+        audioText: 'เธอ',
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'Which vowel is in the word ตัว (body)?',
+        options: ['เ-ีย (ia)', '-ัว (ua)', 'เ-ือ (uea)', 'เ-อ (oe)'],
+        correctIndex: 1,
+      },
+    ],
+    srsItemIds: ['sara_ia', 'sara_ua', 'sara_uea', 'sara_oe', 'thor_thaan', 'hor_nokhuk', 'w_riian', 'w_dtua', 'w_muueang', 'w_thoe', 'w_sathaanii'],
+    skillPreview: {
+      heading: "You'll read compound vowels in real words",
+      examples: [
+        { thai: 'เรียน', romanization: 'riian', meaning: 'to study' },
+        { thai: 'เมือง', romanization: 'muueang', meaning: 'city' },
+        { thai: 'สถานี', romanization: 'sa-thǎa-nii', meaning: 'station' },
+      ],
+    },
+  },
+
+  // === LESSON 13: Completing the Alphabet ===
+  {
+    id: 'R13',
+    title: 'Completing the Alphabet',
+    goal: 'Learn the remaining 8 consonants from Pali/Sanskrit loanwords: ฎ ฏ ฆ ฌ ฑ ฒ ณ ฬ. Acknowledge obsolete ฃ ฅ. You now know all 44 Thai consonants.',
+    phase: 'reading',
+    order: 12,
+    difficulty: 'beginner',
+    prerequisites: ['R12'],
+    steps: [
+      {
+        kind: 'text',
+        content:
+          'Time to complete the alphabet. These 8 consonants come from Pali and Sanskrit loanwords. They duplicate sounds of consonants you already know, but they appear in real Thai words you will encounter -- legal terms, temple signs, university names, and everyday vocabulary.\n\nAfter this lesson, you will know **all 44 Thai consonants**.',
+      },
+      {
+        kind: 'table',
+        title: 'The Remaining Consonants',
+        headers: ['Thai', 'Sound', 'Same as', 'Example Word'],
+        rows: [
+          ['ฎ', 'daw (mid)', 'ด', 'กฎหมาย gòt-mǎai = law'],
+          ['ฏ', 'dtaw (mid)', 'ต', 'ปฏิบัติ bpà-dtì-bàt = to practice'],
+          ['ฆ', 'kaw (low)', 'ค', 'ฆาตกร khâat-dta-gawn = murderer'],
+          ['ฌ', 'chaw (low)', 'ช', 'เฌอ choe = tree (poetic, rare)'],
+          ['ฑ', 'taw (low)', 'ท', 'มณโฑ mon-thoo = Montho (Ramakien)'],
+          ['ฒ', 'taw (low)', 'ท', 'ผู้เฒ่า phûu-thâo = elder'],
+          ['ณ', 'naw (low)', 'น', 'เณร neen = novice monk'],
+          ['ฬ', 'law (low)', 'ล', 'จุฬา ju-laa = Chulalongkorn'],
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'These consonants exist because Thai borrowed many words from Pali and Sanskrit, which distinguished sounds that Thai does not. In practice, ฎ sounds exactly like ด, ฏ like ต, ณ like น, and ฬ like ล. You just need to recognize the correct spelling.',
+        examples: [
+          { thai: 'กฎหมาย', romanization: 'gòt-mǎai', english: 'law -- uses ฎ (not ด)' },
+          { thai: 'เณร', romanization: 'neen', english: 'novice monk -- uses ณ (not น)' },
+          { thai: 'จุฬา', romanization: 'ju-laa', english: 'Chulalongkorn -- uses ฬ (not ล)' },
+        ],
+      },
+      {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'กฎหมาย',
+            romanization: 'gòt-mǎai',
+            english: 'law',
+            detail: 'Uses ฎ. Seen on legal documents and law offices.',
+          },
+          {
+            thai: 'ปฏิบัติ',
+            romanization: 'bpà-dtì-bàt',
+            english: 'to practice / operate',
+            detail: 'Uses ฏ. Common in formal and Buddhist contexts.',
+          },
+          {
+            thai: 'เณร',
+            romanization: 'neen',
+            english: 'novice monk',
+            detail: 'Uses ณ. Seen on temple signs everywhere in Thailand.',
+          },
+          {
+            thai: 'จุฬา',
+            romanization: 'ju-laa',
+            english: 'Chulalongkorn (university name)',
+            detail: 'Uses ฬ. Thailand\'s most prestigious university.',
+          },
+          {
+            thai: 'ผู้เฒ่า',
+            romanization: 'phûu-thâo',
+            english: 'elder / old person',
+            detail: 'Uses ฒ.',
+          },
+          {
+            thai: 'ฆาตกร',
+            romanization: 'khâat-dta-gawn',
+            english: 'murderer / killer',
+            detail: 'Uses ฆ. Dramatic but memorable.',
+          },
+        ],
+      },
+      {
+        kind: 'text',
+        content:
+          'Thai also has two **obsolete** consonants: ฃ (khaw khuat) and ฅ (khaw khon). These are no longer used in modern Thai writing. They have been replaced by ข and ค respectively. You may see them in old texts or alphabet charts, but you do not need to learn them.\n\n**Congratulations -- you now know all 44 Thai consonants.**',
+      },
+      {
+        kind: 'practice',
+        exercises: [
+          {
+            type: 'multiple_choice',
+            prompt: 'ฎ makes the same sound as which common consonant?',
+            options: ['ด', 'ต', 'บ', 'ก'],
+            correctIndex: 0,
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does กฎหมาย mean?',
+            options: ['temple', 'law', 'university', 'elder'],
+            correctIndex: 1,
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does เณร mean?',
+            options: ['law', 'elder', 'novice monk', 'university'],
+            correctIndex: 2,
+          },
+          {
+            type: 'match',
+            pairs: [
+              { left: 'ฎ', right: 'Same sound as ด' },
+              { left: 'ฏ', right: 'Same sound as ต' },
+              { left: 'ณ', right: 'Same sound as น' },
+              { left: 'ฬ', right: 'Same sound as ล' },
+            ],
+          },
+          {
+            type: 'tap_to_reveal',
+            cards: [
+              { front: 'กฎหมาย', back: 'gòt-mǎai -- law' },
+              { front: 'ปฏิบัติ', back: 'bpà-dtì-bàt -- to practice' },
+              { front: 'เณร', back: 'neen -- novice monk' },
+            ],
+          },
+        ],
+      },
+    ],
+    assessment: [
+      {
+        type: 'multiple_choice',
+        prompt: 'ฎ makes the same sound as which consonant?',
+        options: ['ด', 'ต', 'บ', 'ก'],
+        correctIndex: 0,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'ณ makes the same sound as which consonant?',
+        options: ['ม', 'ล', 'น', 'ง'],
+        correctIndex: 2,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'What does กฎหมาย mean?',
+        promptThai: 'กฎหมาย',
+        options: ['temple', 'law', 'elder', 'monk'],
+        correctIndex: 1,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'What does เณร mean?',
+        options: ['law', 'university', 'novice monk', 'elder'],
+        correctIndex: 2,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'Why does Thai have consonants like ฎ and ณ that sound the same as ด and น?',
+        options: [
+          'They are from Pali/Sanskrit loanwords',
+          'They make different sounds',
+          'They are newer additions',
+          'They are used in formal speech only',
+        ],
+        correctIndex: 0,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'What happened to the consonants ฃ and ฅ?',
+        options: [
+          'They are very common',
+          'They are obsolete and no longer used in modern Thai',
+          'They are used only in names',
+          'They were added recently',
+        ],
+        correctIndex: 1,
+      },
+    ],
+    srsItemIds: ['dor_chada', 'dtor_patak', 'khor_rakhang', 'nor_neen', 'lor_julaa', 'w_gotmaai', 'w_neen', 'w_julaa'],
+    skillPreview: {
+      heading: "You now know all 44 Thai consonants",
+      examples: [
+        { thai: 'กฎหมาย', romanization: 'gòt-mǎai', meaning: 'law' },
+        { thai: 'เณร', romanization: 'neen', meaning: 'novice monk' },
+        { thai: 'จุฬา', romanization: 'ju-laa', meaning: 'Chulalongkorn' },
+      ],
+    },
+  },
+
+  // === LESSON 14: Reading Real Words ===
+  {
+    id: 'R14',
+    title: 'Reading Real Words',
+    goal: 'Read complete Thai words using all learned consonants and vowels. Consolidation and decoding practice.',
+    phase: 'reading',
+    order: 13,
+    difficulty: 'beginner',
+    prerequisites: ['R13'],
+    steps: [
+      {
+        kind: 'text',
+        content:
+          'You now know all 44 consonants and many vowels. Let us combine everything into reading real Thai words -- some of the most common words in the language.\n\nFrom this lesson forward, we will practice not just HOW to read words, but WHAT they mean.',
       },
       {
         kind: 'info_card',
@@ -273,6 +698,31 @@ export const phase3Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'ซื้อ',
+            romanization: 'súue',
+            english: 'to buy',
+          },
+          {
+            thai: 'ภาษา',
+            romanization: 'phaa-sǎa',
+            english: 'language',
+          },
+          {
+            thai: 'เรียน',
+            romanization: 'riian',
+            english: 'to study',
+          },
+          {
+            thai: 'เมือง',
+            romanization: 'muueang',
+            english: 'city',
+          },
+        ],
+      },
+      {
         kind: 'rule',
         rule: 'You can combine these words into phrases. มาดู means "come watch" and ไปกิน means "go eat." Thai often chains verbs together without extra words.',
         examples: [
@@ -286,19 +736,19 @@ export const phase3Lessons: RichLesson[] = [
         exercises: [
           {
             type: 'multiple_choice',
-            prompt: 'How do you read this?',
+            prompt: 'What does กิน mean?',
             promptThai: 'กิน',
-            options: ['gin', 'giin', 'gan', 'gun'],
-            correctIndex: 0,
+            options: ['to come', 'to eat', 'to go', 'water'],
+            correctIndex: 1,
             audioText: 'กิน',
           },
           {
             type: 'multiple_choice',
-            prompt: 'What does มา mean?',
-            promptThai: 'มา',
-            options: ['to eat', 'to go', 'to come', 'water'],
-            correctIndex: 2,
-            audioText: 'มา',
+            prompt: 'What does ภาษา mean?',
+            promptThai: 'ภาษา',
+            options: ['bank', 'language', 'station', 'city'],
+            correctIndex: 1,
+            audioText: 'ภาษา',
           },
           {
             type: 'multiple_choice',
@@ -314,7 +764,7 @@ export const phase3Lessons: RichLesson[] = [
               { left: 'กิน', right: 'to eat' },
               { left: 'มา', right: 'to come' },
               { left: 'ไป', right: 'to go' },
-              { left: 'ดี', right: 'good' },
+              { left: 'ซื้อ', right: 'to buy' },
             ],
           },
           {
@@ -322,21 +772,13 @@ export const phase3Lessons: RichLesson[] = [
             cards: [
               { front: 'น้ำ', back: 'náam -- water', audioText: 'น้ำ' },
               { front: 'ไม่', back: 'mâi -- not', audioText: 'ไม่' },
-              { front: 'ไป', back: 'bpai -- to go', audioText: 'ไป' },
+              { front: 'เรียน', back: 'riian -- to study', audioText: 'เรียน' },
             ],
           },
         ],
       },
     ],
     assessment: [
-      {
-        type: 'multiple_choice',
-        prompt: 'How do you read this?',
-        promptThai: 'กิน',
-        options: ['gin', 'giin', 'gan', 'gun'],
-        correctIndex: 0,
-        audioText: 'กิน',
-      },
       {
         type: 'multiple_choice',
         prompt: 'What does กิน mean?',
@@ -347,19 +789,17 @@ export const phase3Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
+        prompt: 'What does ภาษา mean?',
+        options: ['bank', 'station', 'language', 'city'],
+        correctIndex: 2,
+      },
+      {
+        type: 'multiple_choice',
         prompt: 'What does มา mean?',
         promptThai: 'มา',
         options: ['to eat', 'to go', 'to come', 'water'],
         correctIndex: 2,
         audioText: 'มา',
-      },
-      {
-        type: 'multiple_choice',
-        prompt: 'What does ไป mean?',
-        promptThai: 'ไป',
-        options: ['to come', 'to eat', 'to go', 'not'],
-        correctIndex: 2,
-        audioText: 'ไป',
       },
       {
         type: 'multiple_choice',
@@ -375,27 +815,33 @@ export const phase3Lessons: RichLesson[] = [
         correctIndex: 0,
         audioText: 'น้ำ',
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'What does ซื้อ mean?',
+        options: ['to sell', 'to buy', 'to eat', 'to study'],
+        correctIndex: 1,
+      },
     ],
-    srsItemIds: ['w_gin', 'w_maa', 'w_bpai', 'w_dii', 'w_naam', 'w_mai'],
+    srsItemIds: ['w_gin', 'w_maa', 'w_bpai', 'w_dii', 'w_naam', 'w_mai', 'w_suue', 'w_phasaa'],
     skillPreview: {
       heading: "You'll read and understand everyday words",
       examples: [
         { thai: 'กิน', romanization: 'gin', meaning: 'to eat' },
-        { thai: 'มา', romanization: 'maa', meaning: 'to come' },
+        { thai: 'ภาษา', romanization: 'phaa-sǎa', meaning: 'language' },
         { thai: 'น้ำ', romanization: 'náam', meaning: 'water' },
       ],
     },
   },
 
-  // === LESSON 13: Building Phrases ===
+  // === LESSON 15: Building Phrases ===
   {
-    id: 'R13',
+    id: 'R15',
     title: 'Building Phrases',
-    goal: 'Combine words into phrases. Adjective-after-noun. Verb chaining.',
+    goal: 'Combine words into phrases. Adjective-after-noun. Verb chaining. Read signs and menus.',
     phase: 'reading',
-    order: 12,
+    order: 14,
     difficulty: 'beginner',
-    prerequisites: ['R12'],
+    prerequisites: ['R14'],
     steps: [
       {
         kind: 'text',
@@ -442,24 +888,43 @@ export const phase3Lessons: RichLesson[] = [
       },
       {
         kind: 'example',
-        title: 'Building longer phrases',
+        title: 'Reading a sign: ร้านอาหาร (restaurant)',
         steps: [
           {
-            label: 'Start with a verb',
-            content: 'มา (maa) = to come',
+            label: 'First word',
+            content: 'ร้าน = ráan = shop, store',
           },
           {
-            label: 'Add another verb',
-            content: 'มา + กิน = มากิน (come eat)',
+            label: 'Second word',
+            content: 'อาหาร = aa-hǎan = food',
           },
           {
-            label: 'Add an object',
-            content: 'มากิน + น้ำ = มากินน้ำ (come drink water)',
+            label: 'Combine',
+            content: 'ร้าน + อาหาร = ráan aa-hǎan',
           },
           {
-            label: 'Pattern',
-            content:
-              'Thai chains verbs and objects in sequence: verb + verb + object',
+            label: 'Meaning',
+            content: '"shop food" = restaurant. Thai builds compound words by combining simple ones.',
+          },
+        ],
+      },
+      {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'ร้าน',
+            romanization: 'ráan',
+            english: 'shop or store',
+          },
+          {
+            thai: 'อาหาร',
+            romanization: 'aa-hǎan',
+            english: 'food',
+          },
+          {
+            thai: 'มี',
+            romanization: 'mii',
+            english: 'to have',
           },
         ],
       },
@@ -480,9 +945,9 @@ export const phase3Lessons: RichLesson[] = [
           },
           {
             type: 'multiple_choice',
-            prompt: 'What does มาดู mean?',
-            options: ['go watch', 'come watch', 'not watch', 'very watch'],
-            correctIndex: 1,
+            prompt: 'What does ร้านอาหาร mean?',
+            options: ['hospital', 'school', 'restaurant', 'bank'],
+            correctIndex: 2,
           },
           {
             type: 'match',
@@ -517,9 +982,9 @@ export const phase3Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'What does มาดู mean?',
-        options: ['go watch', 'come watch', 'not watch', 'very watch'],
-        correctIndex: 1,
+        prompt: 'What does ร้านอาหาร mean?',
+        options: ['hospital', 'school', 'restaurant', 'bank'],
+        correctIndex: 2,
       },
       {
         type: 'multiple_choice',
@@ -535,386 +1000,18 @@ export const phase3Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'In Thai, where does the adjective go?',
-        options: [
-          'Before the noun',
-          'After the noun',
-          'Before the sentence',
-          'It varies',
-        ],
-        correctIndex: 1,
-      },
-    ],
-    srsItemIds: ['w_maak', 'w_duu', 'w_kaa'],
-    skillPreview: {
-      heading: "You'll read Thai phrases",
-      examples: [
-        { thai: 'ดีมาก', romanization: 'dii mâak', meaning: 'very good' },
-        { thai: 'ไปกิน', romanization: 'bpai gin', meaning: 'go eat' },
-        { thai: 'ไม่ดี', romanization: 'mâi dii', meaning: 'not good' },
-      ],
-    },
-  },
-
-  // === LESSON 14: Rare Consonants and the Full Alphabet ===
-  {
-    id: 'R14',
-    title: 'Rare Consonants',
-    goal: 'Learn remaining consonants including rare ones (ฎ, ฏ, ฆ, ฌ, etc.). Key framing: "You will rarely see these, but here they are for completeness."',
-    phase: 'reading',
-    order: 13,
-    difficulty: 'beginner',
-    prerequisites: ['R13'],
-    steps: [
-      {
-        kind: 'text',
-        content:
-          'Thai has 44 consonants total. You have learned the common ones. The remaining consonants are **rare** -- they appear mostly in words borrowed from Pali and Sanskrit (ancient Indian languages). You will rarely encounter them, but knowing they exist helps you read the occasional unfamiliar word.\n\nDo not worry about memorizing these. Focus on recognizing that they exist.',
-      },
-      {
-        kind: 'table',
-        title: 'Rare Consonants',
-        headers: ['Thai', 'Sound', 'Keyword', 'Notes'],
-        rows: [
-          ['ฎ', 'daw', 'ชฎา headdress', 'Same sound as ด (mid class)'],
-          ['ฏ', 'dtaw', 'ปฏัก goad', 'Same sound as ต (mid class)'],
-          ['ฆ', 'kaw', 'ระฆัง bell', 'Low class (rare)'],
-          ['ฌ', 'chaw', 'เฌอ tree', 'Low class (rare)'],
-          ['ฑ', 'taw', 'มณโฑ Montho', 'Low class'],
-          ['ฒ', 'taw', 'ผู้เฒ่า elder', 'Low class'],
-          ['ณ', 'naw', 'เณร novice', 'Same as น (low class)'],
-          ['ฬ', 'law', 'จุฬา kite', 'Same as ล (low class)'],
-        ],
-      },
-      {
-        kind: 'rule',
-        rule: 'Many rare consonants duplicate sounds of common ones: ฎ sounds like ด, ฏ sounds like ต, ณ sounds like น. They exist because Thai borrowed words from Pali and Sanskrit that distinguished these sounds.',
-        examples: [
-          { thai: 'ฎ', romanization: 'daw', english: 'Same sound as ด' },
-          { thai: 'ฏ', romanization: 'dtaw', english: 'Same sound as ต' },
-          { thai: 'ณ', romanization: 'naw', english: 'Same sound as น' },
-        ],
-      },
-      {
-        kind: 'info_card',
-        items: [
-          {
-            thai: 'กฎ',
-            romanization: 'gòt',
-            english: 'rule or law',
-          },
-          {
-            thai: 'บัณฑิต',
-            romanization: 'ban-dìt',
-            english: 'graduate',
-          },
-          {
-            thai: 'ปฏิบัติ',
-            romanization: 'bpà-dtì-bàt',
-            english: 'to practice',
-          },
-        ],
-      },
-      {
-        kind: 'practice',
-        exercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'ฎ makes the same sound as which common consonant?',
-            options: ['ด', 'ต', 'บ', 'ก'],
-            correctIndex: 0,
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'Why does Thai have rare consonants like ฎ and ณ?',
-            options: [
-              'They make unique sounds',
-              'They are from Pali/Sanskrit loanwords',
-              'They are used in modern slang',
-              'They are only for writing numbers',
-            ],
-            correctIndex: 1,
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'How many consonants does Thai have in total?',
-            options: ['33', '44', '52', '26'],
-            correctIndex: 1,
-          },
-          {
-            type: 'match',
-            pairs: [
-              { left: 'ฎ', right: 'Same sound as ด' },
-              { left: 'ฏ', right: 'Same sound as ต' },
-              { left: 'ณ', right: 'Same sound as น' },
-              { left: 'ฬ', right: 'Same sound as ล' },
-            ],
-          },
-        ],
-      },
-    ],
-    assessment: [
-      {
-        type: 'multiple_choice',
-        prompt: 'How many consonants does Thai have in total?',
-        options: ['33', '44', '52', '26'],
-        correctIndex: 1,
-      },
-      {
-        type: 'multiple_choice',
-        prompt:
-          'Why does Thai have consonants like ฎ and ณ that sound the same as ด and น?',
-        options: [
-          'They are from Pali/Sanskrit loanwords',
-          'They make different sounds',
-          'They are newer additions',
-          'They are used in formal speech only',
-        ],
-        correctIndex: 0,
-      },
-      {
-        type: 'multiple_choice',
-        prompt: 'ฎ makes the same sound as which common consonant?',
-        options: ['ด', 'ต', 'บ', 'ก'],
-        correctIndex: 0,
-      },
-      {
-        type: 'multiple_choice',
-        prompt: 'ฏ makes the same sound as which common consonant?',
-        options: ['ด', 'ต', 'บ', 'ก'],
-        correctIndex: 1,
-      },
-      {
-        type: 'multiple_choice',
-        prompt: 'How do you read กฎ?',
-        promptThai: 'กฎ',
-        options: ['gòt', 'gòd', 'gàt', 'gàd'],
-        correctIndex: 0,
-        audioText: 'กฎ',
-      },
-      {
-        type: 'multiple_choice',
-        prompt: 'Which statement is true about rare consonants?',
-        options: [
-          'They are used in every sentence',
-          'They mostly appear in Pali-Sanskrit loanwords',
-          'They have unique sounds',
-          'They are only in names',
-        ],
-        correctIndex: 1,
-      },
-    ],
-    srsItemIds: ['dor_chada', 'dtor_patak', 'khor_rakhang'],
-    skillPreview: {
-      heading: "You'll recognize the full Thai alphabet",
-      examples: [
-        { thai: 'กฎ', romanization: 'gòt', meaning: 'rule' },
-        { thai: 'บัณฑิต', romanization: 'ban-dìt', meaning: 'graduate' },
-        {
-          thai: 'ปฏิบัติ',
-          romanization: 'bpà-dtì-bàt',
-          meaning: 'to practice',
-        },
-      ],
-    },
-  },
-
-  // === LESSON 15: Comprehensive Reading Practice ===
-  {
-    id: 'R15',
-    title: 'Reading Practice',
-    goal: 'Read signs, menus, common text patterns. Consolidation of everything learned.',
-    phase: 'reading',
-    order: 14,
-    difficulty: 'beginner',
-    prerequisites: ['R14'],
-    steps: [
-      {
-        kind: 'text',
-        content:
-          'Time to put everything together. You know most consonants, many vowels, and can read real words and phrases. Let us practice reading the kind of Thai text you would see in everyday life -- signs, menus, and common expressions.',
-      },
-      {
-        kind: 'example',
-        title: 'Reading a sign: ร้านอาหาร (restaurant)',
-        steps: [
-          {
-            label: 'First word',
-            content: 'ร้าน = ráan = shop, store',
-          },
-          {
-            label: 'Second word',
-            content: 'อาหาร = aa-hǎan = food',
-          },
-          {
-            label: 'Combine',
-            content: 'ร้าน + อาหาร = ráan aa-hǎan',
-          },
-          {
-            label: 'Meaning',
-            content: '"shop food" = restaurant. Thai builds compound words by combining simple ones.',
-          },
-        ],
-      },
-      {
-        kind: 'info_card',
-        items: [
-          {
-            thai: 'กิน',
-            romanization: 'gin',
-            english: 'to eat',
-          },
-          {
-            thai: 'มี',
-            romanization: 'mii',
-            english: 'to have',
-          },
-          {
-            thai: 'ร้าน',
-            romanization: 'ráan',
-            english: 'shop or store',
-          },
-          {
-            thai: 'อาหาร',
-            romanization: 'aa-hǎan',
-            english: 'food',
-          },
-        ],
-      },
-      {
-        kind: 'rule',
-        rule: 'ร้านอาหาร literally means "shop food" = restaurant. Thai often combines simple words to make compound words: ร้าน (shop) + อาหาร (food) = ร้านอาหาร (restaurant).',
-        examples: [
-          {
-            thai: 'ร้านอาหาร',
-            romanization: 'ráan aa-hǎan',
-            english: 'restaurant',
-          },
-          {
-            thai: 'น้ำดื่ม',
-            romanization: 'náam dùuem',
-            english: 'drinking water',
-          },
-        ],
-      },
-      {
-        kind: 'practice',
-        exercises: [
-          {
-            type: 'multiple_choice',
-            prompt: 'What does กิน mean?',
-            promptThai: 'กิน',
-            options: ['to come', 'to eat', 'good', 'water'],
-            correctIndex: 1,
-            audioText: 'กิน',
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'What does ร้านอาหาร mean?',
-            options: ['hospital', 'school', 'restaurant', 'bank'],
-            correctIndex: 2,
-          },
-          {
-            type: 'multiple_choice',
-            prompt: 'How do you read this?',
-            promptThai: 'กา',
-            options: ['gaa', 'kaa', 'jaa', 'daa'],
-            correctIndex: 0,
-            audioText: 'กา',
-          },
-          {
-            type: 'match',
-            pairs: [
-              { left: 'กิน', right: 'to eat' },
-              { left: 'มี', right: 'to have' },
-              { left: 'ร้าน', right: 'shop' },
-              { left: 'อาหาร', right: 'food' },
-            ],
-          },
-          {
-            type: 'fill_in',
-            sentence: 'ร้าน___ means "restaurant"',
-            answer: 'อาหาร',
-            options: ['อาหาร', 'น้ำ', 'ดี', 'มาก'],
-          },
-        ],
-      },
-    ],
-    assessment: [
-      {
-        type: 'multiple_choice',
-        prompt: 'How do you read กา?',
-        promptThai: 'กา',
-        options: ['gaa', 'kaa', 'jaa', 'daa'],
-        correctIndex: 0,
-        audioText: 'กา',
-      },
-      {
-        type: 'multiple_choice',
-        prompt: 'What does กิน mean?',
-        promptThai: 'กิน',
-        options: ['to come', 'to eat', 'good', 'to go'],
-        correctIndex: 1,
-        audioText: 'กิน',
-      },
-      {
-        type: 'multiple_choice',
-        prompt: 'What does มากินไก่ mean?',
-        options: [
-          'go eat chicken',
-          'come eat chicken',
-          'good chicken',
-          'eat good fish',
-        ],
-        correctIndex: 1,
-      },
-      {
-        type: 'multiple_choice',
-        prompt: 'How do you read นา?',
-        promptThai: 'นา',
-        options: ['maa', 'laa', 'raa', 'naa'],
-        correctIndex: 3,
-        audioText: 'นา',
-      },
-      {
-        type: 'multiple_choice',
-        prompt: 'How do you read ลำ?',
-        promptThai: 'ลำ',
-        options: ['laa', 'lam', 'lai', 'lii'],
-        correctIndex: 1,
-        audioText: 'ลำ',
-      },
-      {
-        type: 'multiple_choice',
-        prompt:
-          'Look at: กา, ดา, ตา, บา. What do they all share?',
-        options: [
-          'Same consonant',
-          'Same vowel -า',
-          'All high-class',
-          'Same meaning',
-        ],
-        correctIndex: 1,
-      },
-      {
-        type: 'multiple_choice',
-        prompt:
-          'If you see ร้านอาหาร on a building, what kind of place is it?',
+        prompt: 'If you see ร้านอาหาร on a building, what kind of place is it?',
         options: ['School', 'Hospital', 'Restaurant', 'Bank'],
         correctIndex: 2,
       },
     ],
-    srsItemIds: ['w_gin', 'w_mii', 'w_raan'],
+    srsItemIds: ['w_maak', 'w_duu', 'w_raan', 'w_aahaan', 'w_mii'],
     skillPreview: {
-      heading: "You'll read signs and everyday text",
+      heading: "You'll read Thai phrases and signs",
       examples: [
-        {
-          thai: 'ร้านอาหาร',
-          romanization: 'ráan aa-hǎan',
-          meaning: 'restaurant',
-        },
-        { thai: 'ข้าวผัด', romanization: 'kâao pàt', meaning: 'fried rice' },
-        { thai: 'น้ำ', romanization: 'náam', meaning: 'water' },
+        { thai: 'ดีมาก', romanization: 'dii mâak', meaning: 'very good' },
+        { thai: 'ไปกิน', romanization: 'bpai gin', meaning: 'go eat' },
+        { thai: 'ร้านอาหาร', romanization: 'ráan aa-hǎan', meaning: 'restaurant' },
       ],
     },
   },
