@@ -99,8 +99,30 @@ export const phase4Lessons: RichLesson[] = [
         ],
         correctIndex: 2,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'Thai has 5 tones. How does this compare to other tonal languages?',
+        options: [
+          'Thai has the most tones of any language',
+          'Mandarin has 4 tones, Cantonese has 6-9 tones',
+          'All Asian languages have exactly 5 tones',
+          'Only Thai uses tones',
+        ],
+        correctIndex: 1,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'ไม่ (not) has a falling tone, while ไม้ (wood) has a high tone. These are called...',
+        options: [
+          'Synonyms',
+          'Homophones',
+          'Tone minimal pairs -- same sounds, different tones, different meanings',
+          'Consonant pairs',
+        ],
+        correctIndex: 2,
+      },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_mai', 'w_maa_horse'],
     skillPreview: {
       heading: 'You\'ll distinguish the five Thai tones',
       examples: [
@@ -199,8 +221,30 @@ export const phase4Lessons: RichLesson[] = [
         options: ['Dead', 'Live'],
         correctIndex: 1,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'กิน (gin, to eat) ends in "n" (a sonorant). กับ (gap, with) ends in "p" (a stop). Which is live and which is dead?',
+        options: [
+          'Both are live',
+          'กิน is live, กับ is dead',
+          'กิน is dead, กับ is live',
+          'Both are dead',
+        ],
+        correctIndex: 1,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'Why are they called "live" syllables?',
+        options: [
+          'They are used more frequently',
+          'You can sustain the sound -- hold it as long as you like',
+          'They are louder',
+          'They always have a high tone',
+        ],
+        correctIndex: 1,
+      },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_gin', 'w_kap'],
     skillPreview: {
       heading: 'You\'ll predict tones from syllable type',
       examples: [
@@ -310,8 +354,19 @@ export const phase4Lessons: RichLesson[] = [
         options: ['High tone', 'Mid tone', 'Rising tone', 'Low tone'],
         correctIndex: 1,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'Mid and low class live syllables both get mid tone with no mark. Where do they differ?',
+        options: [
+          'They never differ',
+          'Dead syllables: mid class gets low tone, low class gets high/falling tone',
+          'They differ only in writing, not in sound',
+          'Low class consonants are always silent',
+        ],
+        correctIndex: 1,
+      },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_kaa', 'w_khaa'],
     skillPreview: {
       heading: 'You\'ll apply tone rules systematically',
       examples: [
@@ -449,6 +504,17 @@ export const phase4Lessons: RichLesson[] = [
         options: ['Low tone', 'Falling tone', 'High tone', 'Rising tone'],
         correctIndex: 0,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'Mai tri and mai jattawa only work with mid-class consonants. Why is this significant?',
+        options: [
+          'It means mid-class consonants can produce all 5 tones',
+          'It means high and low class consonants have no tones',
+          'It is just a historical accident with no importance',
+          'It means mid-class consonants are rare',
+        ],
+        correctIndex: 0,
+      },
     ],
     srsItemIds: ['mai_ek', 'mai_tho', 'mai_tri', 'mai_jattawa'],
     skillPreview: {
@@ -559,8 +625,25 @@ export const phase4Lessons: RichLesson[] = [
         options: ['Word meaning', 'Tone mark', 'Sentence position', 'Speaker gender'],
         correctIndex: 1,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'Analyze น้ำ: น is low class, -ำ is a live syllable, and it has mai tho. Low class + mai tho = ?',
+        options: ['Low tone', 'Falling tone', 'High tone', 'Rising tone'],
+        correctIndex: 2,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'Thai people write 555 in text messages to mean "hahaha." Why?',
+        options: [
+          '5 is a lucky number',
+          'The number 5 in Thai is ห้า (haa), so 555 = haa haa haa',
+          'It looks like a laughing face',
+          '5 sounds like "ha" in English',
+        ],
+        correctIndex: 1,
+      },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_naam', 'w_haa', 'w_dii'],
     skillPreview: {
       heading: 'You\'ll read tones in real sentences',
       examples: [

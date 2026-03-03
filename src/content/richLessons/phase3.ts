@@ -168,6 +168,17 @@ export const phase3Lessons: RichLesson[] = [
         correctIndex: 0,
         audioText: 'ฝี',
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'All high-class consonants share a common trait in pronunciation. What is it?',
+        options: [
+          'They are all silent',
+          'They are all aspirated (pronounced with a puff of air)',
+          'They all make vowel sounds',
+          'They are all nasal sounds',
+        ],
+        correctIndex: 1,
+      },
     ],
     srsItemIds: ['sor_suea', 'for_faa', 'phor_phueng', 'w_sii', 'w_faa', 'w_phaa'],
     skillPreview: {
@@ -337,6 +348,17 @@ export const phase3Lessons: RichLesson[] = [
         prompt: 'What does น้ำดี mean?',
         options: ['good rice field', 'good snake', 'good water', 'good person'],
         correctIndex: 2,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'ข (high class) and ค (low class) both make the "k" sound. ขา has a rising tone, คา has a mid tone. What determines the difference?',
+        options: [
+          'The vowel determines the tone',
+          'The consonant class determines the tone',
+          'The word meaning determines the tone',
+          'There is no real difference',
+        ],
+        correctIndex: 1,
       },
     ],
     srsItemIds: ['khor_khwaai', 'ngor_nguu', 'nor_nuu', 'w_nguu', 'w_naa', 'w_naam'],
@@ -524,6 +546,12 @@ export const phase3Lessons: RichLesson[] = [
         correctIndex: 3,
         audioText: 'วัน',
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'Using words you know, what does ไม่มากิน mean?',
+        options: ['Not eating well', 'Don\'t come eat', 'Come eat a lot', 'Not good food'],
+        correctIndex: 1,
+      },
     ],
     srsItemIds: ['mor_maa', 'ror_ruea', 'lor_ling', 'wor_waen', 'w_maa', 'w_ruu', 'w_wan', 'w_mai'],
     skillPreview: {
@@ -701,6 +729,17 @@ export const phase3Lessons: RichLesson[] = [
         correctIndex: 1,
         audioText: 'ไท',
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'The Thai word ชา (chaa, tea) was borrowed from Chinese. In Mandarin, tea is also "cha." This is an example of...',
+        options: [
+          'A coincidence',
+          'A loanword borrowed between languages',
+          'Thai and Chinese being the same language',
+          'A tone mark changing the meaning',
+        ],
+        correctIndex: 1,
+      },
     ],
     srsItemIds: ['thor_thong', 'chor_chaang', 'yor_yak', 'w_tham', 'w_chaa', 'w_yaa'],
     skillPreview: {
@@ -871,6 +910,23 @@ export const phase3Lessons: RichLesson[] = [
         options: ['laa', 'lam', 'lai', 'lii'],
         correctIndex: 1,
         audioText: 'ลำ',
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'Look at this pattern: กา, ดา, ตา, บา. What do all these syllables share?',
+        options: [
+          'They all use the same consonant',
+          'They all end with the -า (aa) vowel sound',
+          'They are all high-class consonants',
+          'They all mean the same thing',
+        ],
+        correctIndex: 1,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'If you see the sign ร้านอาหาร on a building, what kind of place is it?',
+        options: ['A school', 'A hospital', 'A restaurant', 'A bank'],
+        correctIndex: 2,
       },
     ],
     srsItemIds: ['w_gin', 'w_mii'],

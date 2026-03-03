@@ -179,6 +179,17 @@ export const phase2Lessons: RichLesson[] = [
         options: ['Short', 'Long', 'It depends', 'Neither'],
         correctIndex: 1,
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'In กา, ดี, and ดู the vowel moves around but the consonant stays in place. What is the pattern?',
+        options: [
+          'The consonant changes shape for each vowel',
+          'The vowel always goes after the consonant',
+          'The vowel position varies (after, above, below) but the consonant stays fixed',
+          'Both consonant and vowel move around',
+        ],
+        correctIndex: 2,
+      },
     ],
     srsItemIds: ['sara_aa', 'sara_ii', 'sara_uu', 'w_dtaa', 'w_dii', 'w_duu'],
     skillPreview: {
@@ -329,6 +340,17 @@ export const phase2Lessons: RichLesson[] = [
         options: ['flat', 'you (informal)', 'old (thing)', 'good'],
         correctIndex: 2,
         audioText: 'เก',
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'What do เก, เต, and เด all have in common?',
+        options: [
+          'They all use vowels written above the consonant',
+          'They all use the vowel เ- written BEFORE the consonant',
+          'They are all high-class consonants',
+          'They all have the same meaning',
+        ],
+        correctIndex: 1,
       },
     ],
     srsItemIds: ['sara_ee', 'sara_ae', 'w_gee', 'w_gae', 'w_bae'],
@@ -496,6 +518,17 @@ export const phase2Lessons: RichLesson[] = [
         correctIndex: 1,
         audioText: 'โป',
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'โต means "big" and ตอ means something different. What does this tell you about Thai vowels?',
+        options: [
+          'Vowels are optional in Thai',
+          'A different vowel on the same consonant changes the meaning entirely',
+          'Vowel position does not matter',
+          'โ- and -อ are the same vowel',
+        ],
+        correctIndex: 1,
+      },
     ],
     srsItemIds: ['sara_oo', 'sara_aw', 'w_dtoo', 'w_jor', 'w_gor'],
     skillPreview: {
@@ -654,6 +687,17 @@ export const phase2Lessons: RichLesson[] = [
         correctIndex: 2,
         audioText: 'ดุ',
       },
+      {
+        type: 'multiple_choice',
+        prompt: 'ดี (dii, long) = "good" vs ดิ (di, short) = particle. ดู (duu, long) = "watch" vs ดุ (du, short) = "fierce." What pattern do you see?',
+        options: [
+          'Long and short vowels always mean the same thing',
+          'Long vs short vowels create completely different words',
+          'Short vowels are just informal versions of long vowels',
+          'Only long vowels have meaning',
+        ],
+        correctIndex: 1,
+      },
     ],
     srsItemIds: ['sara_i', 'sara_u', 'w_di', 'w_du'],
     skillPreview: {
@@ -811,6 +855,12 @@ export const phase2Lessons: RichLesson[] = [
         type: 'multiple_choice',
         prompt: 'Where is ไ- written?',
         options: ['After the consonant', 'Above', 'Before the consonant', 'Below'],
+        correctIndex: 2,
+      },
+      {
+        type: 'multiple_choice',
+        prompt: 'The word ไทย (Thai) uses the ไ- vowel you just learned. What does ไทย literally mean?',
+        options: ['Land', 'People', 'Free / Freedom', 'Beautiful'],
         correctIndex: 2,
       },
     ],
