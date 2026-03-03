@@ -68,7 +68,8 @@ export function HomeScreen() {
   const { audioAvailable } = useAudio()
   const [previewLesson, setPreviewLesson] = useState<RichLesson | null>(null)
 
-  const isStreetMode = prefs.streetThaiMode
+  const showStreetThai = import.meta.env.VITE_SHOW_STREET_THAI !== 'false'
+  const isStreetMode = showStreetThai && prefs.streetThaiMode
   const allLessons = getRichLessons()
   const grouped = groupByPhase(allLessons)
   const dueItems = getDueItems(state)
@@ -117,20 +118,22 @@ export function HomeScreen() {
               )}
             </button>
             {/* Street Thai toggle */}
-            <button
-              onClick={() => setStreetThaiMode(!prefs.streetThaiMode)}
-              className={`w-9 h-9 rounded-full flex items-center justify-center transition-colors ${
-                isStreetMode
-                  ? 'bg-red-100 dark:bg-red-900 hover:bg-red-200 dark:hover:bg-red-800'
-                  : 'bg-stone-200 dark:bg-stone-700 hover:bg-stone-300 dark:hover:bg-stone-600'
-              }`}
-              aria-label="Toggle street thai mode"
-            >
-              <svg className={`w-5 h-5 ${isStreetMode ? 'text-red-600 dark:text-red-400' : 'text-stone-500 dark:text-stone-300'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
-              </svg>
-            </button>
+            {showStreetThai && (
+              <button
+                onClick={() => setStreetThaiMode(!prefs.streetThaiMode)}
+                className={`w-9 h-9 rounded-full flex items-center justify-center transition-colors ${
+                  isStreetMode
+                    ? 'bg-red-100 dark:bg-red-900 hover:bg-red-200 dark:hover:bg-red-800'
+                    : 'bg-stone-200 dark:bg-stone-700 hover:bg-stone-300 dark:hover:bg-stone-600'
+                }`}
+                aria-label="Toggle street thai mode"
+              >
+                <svg className={`w-5 h-5 ${isStreetMode ? 'text-red-600 dark:text-red-400' : 'text-stone-500 dark:text-stone-300'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                </svg>
+              </button>
+            )}
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 dark:text-stone-50 mb-1">
             {isStreetMode ? 'Street Thai' : 'Thai Reading'}
