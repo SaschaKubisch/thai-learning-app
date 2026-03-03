@@ -1,6 +1,6 @@
 ---
 name: release
-description: Create a versioned release with notes, tagging, and GitHub release. Use this skill whenever the user wants to release, deploy, cut a release, merge and release, ship it, create a release, tag a new version, or any request to publish a new version of the app. Also use when the user says "release dev to main", "push to production", or asks to merge a development branch for release. Triggers include phrases like "release", "deploy", "ship it", "new version", "cut a release", "merge and release", "release to main", "push to production", or any transition from development to a tagged production release.
+description: Create a versioned release with notes, tagging, and GitHub release. Use this skill whenever the user wants to release, deploy, cut a release, merge and release, ship it, create a release, tag a new version, or any request to publish a new version of the app. Also use when the user says "release dev to main", "push to production", or asks to merge a development branch for release. CRITICAL -- also trigger this skill AUTOMATICALLY after any merge or push to the main branch, including hotfix merges and PR merges to main. Every push to main is a release. Triggers include phrases like "release", "deploy", "ship it", "new version", "cut a release", "merge and release", "release to main", "push to production", "merge to main", or any transition from development to a tagged production release.
 ---
 
 # Release Skill
@@ -149,6 +149,7 @@ Print a summary:
 
 ## Important notes
 
+- **Every push to main is a release.** If code was merged or pushed to main (hotfix PR, feature merge, any merge), a release MUST follow immediately. Do not wait for the user to ask -- initiate the release workflow as soon as the merge to main completes. This is the most important rule.
 - Always get user confirmation on the version number before tagging.
 - Never force-push to main.
 - If tests are failing, do NOT release. Fix them first.
