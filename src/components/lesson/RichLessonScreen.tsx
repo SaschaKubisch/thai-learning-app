@@ -65,8 +65,8 @@ export function RichLessonScreen() {
 
   if (!lesson) {
     return (
-      <div className="min-h-screen bg-stone-50 flex items-center justify-center">
-        <p className="text-stone-500">Lesson not found.</p>
+      <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex items-center justify-center">
+        <p className="text-stone-500 dark:text-stone-400">Lesson not found.</p>
       </div>
     )
   }
@@ -84,16 +84,16 @@ export function RichLessonScreen() {
     : false
 
   return (
-    <div className="min-h-screen bg-stone-50 flex flex-col">
+    <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex flex-col">
       {/* Header */}
       <div className="px-6 pt-4 pb-2 flex items-center justify-between">
         <button
           onClick={() => navigate('/')}
-          className="text-stone-400 hover:text-stone-600 text-sm"
+          className="text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 text-sm"
         >
           Exit
         </button>
-        <span className="text-sm text-stone-400 uppercase tracking-wide">
+        <span className="text-sm text-stone-400 dark:text-stone-500 uppercase tracking-wide">
           {lesson.title}
         </span>
         <div className="w-8" />

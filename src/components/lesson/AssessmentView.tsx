@@ -45,27 +45,27 @@ export function AssessmentView({ questions, onComplete }: Props) {
       'w-full min-h-[56px] px-4 py-3 rounded-lg border-2 text-lg font-medium transition-colors text-left'
 
     if (!showFeedback) {
-      return `${base} border-stone-200 bg-white hover:bg-stone-50 active:bg-stone-100 text-stone-800`
+      return `${base} border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 hover:bg-stone-50 dark:hover:bg-stone-800 active:bg-stone-100 dark:active:bg-stone-700 text-stone-800 dark:text-stone-200`
     }
 
     if (index === question.correctIndex) {
-      return `${base} border-green-500 bg-green-50 text-green-900`
+      return `${base} border-green-500 dark:border-green-400 bg-green-50 dark:bg-green-900/30 text-green-900 dark:text-green-200`
     }
 
     if (index === selectedIndex) {
-      return `${base} border-red-500 bg-red-50 text-red-900`
+      return `${base} border-red-500 dark:border-red-400 bg-red-50 dark:bg-red-900/30 text-red-900 dark:text-red-200`
     }
 
-    return `${base} border-stone-200 bg-white text-stone-400`
+    return `${base} border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-400 dark:text-stone-600`
   }
 
   return (
     <div className="flex flex-col items-center gap-6 w-full">
       <div className="flex items-center justify-between w-full">
-        <p className="text-xs text-stone-400 uppercase tracking-wide">
+        <p className="text-xs text-stone-400 dark:text-stone-500 uppercase tracking-wide">
           Assessment
         </p>
-        <p className="text-xs text-stone-400">
+        <p className="text-xs text-stone-400 dark:text-stone-500">
           {currentIndex + 1} of {questions.length}
         </p>
       </div>
@@ -77,20 +77,20 @@ export function AssessmentView({ questions, onComplete }: Props) {
             key={i}
             className={`h-1 flex-1 rounded-full ${
               i < currentIndex
-                ? 'bg-stone-700'
+                ? 'bg-stone-700 dark:bg-stone-300'
                 : i === currentIndex
-                  ? 'bg-amber-400'
-                  : 'bg-stone-200'
+                  ? 'bg-amber-400 dark:bg-amber-500'
+                  : 'bg-stone-200 dark:bg-stone-700'
             }`}
           />
         ))}
       </div>
 
-      <p className="text-stone-500 text-sm text-center">{question.prompt}</p>
+      <p className="text-stone-500 dark:text-stone-400 text-sm text-center">{question.prompt}</p>
 
       {question.promptThai && (
         <div className="flex items-center gap-3">
-          <span className="text-5xl sm:text-7xl font-bold text-stone-900">
+          <span className="text-5xl sm:text-7xl font-bold text-stone-900 dark:text-stone-50">
             {question.promptThai}
           </span>
           {question.audioText && (

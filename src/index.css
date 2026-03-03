@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
   font-family: 'Noto Sans Thai Looped', sans-serif;
+}
+
+.dark body {
+  background-color: #0c0a09; /* stone-950 */
 }

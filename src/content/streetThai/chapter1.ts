@@ -1,0 +1,152 @@
+import type { RichLesson } from '../lessonTypes'
+
+export const chapter1: RichLesson = {
+  id: 'S01',
+  title: 'Forget Everything Your Teacher Taught You',
+  goal: 'Learn the real pronouns Thai people use with friends -- and the ones that start fights.',
+  phase: 'consonants',
+  order: 0,
+  difficulty: 'beginner',
+  prerequisites: [],
+  steps: [
+    {
+      kind: 'text',
+      content:
+        'Thai textbooks teach you ผม (phom) and ดิฉัน (dichan). Nobody under 60 actually talks like that unless they\'re on TV or apologizing to a cop. Real Thai people say กู and มึง, which your teacher would rather die than teach you. Time to talk like an actual human being.',
+    },
+    {
+      kind: 'table',
+      title: 'Crude Pronouns & First Insults',
+      headers: ['Thai', 'Romanization', 'Meaning', 'Notes'],
+      rows: [
+        ['กู', 'guu', 'I/me (crude)', 'The real "I." Used between friends. Say this to your boss and start updating your resume.'],
+        ['มึง', 'mueng', 'You (crude)', 'The partner of กู. Either best friends or 3 seconds from a fistfight.'],
+        ['เอ็ง', 'eng', 'You (condescending)', 'How your Thai mother-in-law addresses you when she thinks you\'re an idiot.'],
+        ['อ้าว', 'aao', '"What the--?!"', 'Thai sound of pure disbelief. Like "huh?!" but ruder.'],
+        ['เฮ้ย', 'hoei', '"Hey!" (crude)', 'How Thai people actually get attention. "Excuse me" is for airports and hospitals.'],
+        ['โว้ย', 'wooi', '"OI!" (very crude)', 'Like เฮ้ย but cranked to 11. Reserved for screaming across a soi at 2am.'],
+        ['บ้า', 'baa', 'Crazy', 'Affectionate between friends (บ้าเลย = "you lunatic!"). An actual insult from strangers.'],
+        ['สัส', 'sat', 'Damn / shit (vulgar)', 'THE Thai swear word. Equivalent of "shit!" Used when you stub your toe, miss the bus, or realize you just ate a chili.'],
+        ['แม่ง', 'maeng', 'F*cking (intensifier)', 'Makes any sentence ruder. "ร้อนแม่ง" = "it\'s f*cking hot." Your teacher will never admit this word exists.'],
+        ['ห่า', 'haa', '"WTF?!" (vulgar)', 'Raw disbelief. When someone tells you pad thai costs 200 baht.'],
+        ['ชิบหาย', 'chip-haai', 'Oh sh*t / damn it', 'Very common. The Thai "oh f*ck." Acceptable even on TV (barely).'],
+        ['เหี้ย', 'hiia', 'Monitor lizard / "bastard"', 'One of the worst single-word insults in Thai. The lizard is considered the filthiest animal. Calling someone เหี้ย is like calling them absolute scum.'],
+        ['สัตว์', 'sat', 'Animal (as insult)', '"ไอ้สัตว์!" = "You animal!" General-purpose dehumanizing insult.'],
+        ['ไอ้', 'ai', 'Crude prefix for males', 'Goes before names or insults: ไอ้บ้า (you crazy bastard), ไอ้เหี้ย (you scum).'],
+        ['อี', 'ii', 'Crude prefix for females', 'Female version of ไอ้. "อีบ้า" = crude "you crazy woman."'],
+      ],
+    },
+    {
+      kind: 'table',
+      title: 'Key Phrases',
+      headers: ['Thai', 'Romanization', 'English'],
+      rows: [
+        ['กูไม่เอา', 'guu mai ao', 'I don\'t f*cking want it'],
+        ['มึงบ้าหรอ', 'mueng baa raw', 'Are you out of your damn mind?!'],
+        ['เฮ้ย มาทางนี้โว้ย', 'hoei maa taang nii wooi', 'HEY! Get over here!'],
+        ['ชิบหาย ลืมกระเป๋าสัส', 'chip-haai luuem gra-bpao sat', 'Sh*t, I forgot my damn bag'],
+        ['อ้าว จริงหรอห่า', 'aao jing raw haa', 'Wait, seriously?! WTF?!'],
+        ['ร้อนแม่ง', 'rawn maeng', 'It\'s f*cking hot'],
+        ['หิวแม่ง', 'hiu maeng', 'I\'m f*cking hungry'],
+        ['เหนื่อยสัส', 'nuueai sat', 'I\'m damn tired'],
+      ],
+    },
+    {
+      kind: 'dialogue',
+      title: 'Two friends at 7-Eleven at 3am',
+      lines: [
+        {
+          speaker: 'A',
+          thai: 'เฮ้ย มึงจะเอาอะไรโว้ย',
+          romanization: 'hoei mueng ja ao a-rai wooi',
+          english: 'HEY what do you want?!',
+        },
+        {
+          speaker: 'B',
+          thai: 'กูเอาเบียร์สัส',
+          romanization: 'guu ao biia sat',
+          english: 'I want beer, damn it',
+        },
+        {
+          speaker: 'A',
+          thai: 'บ้าเลย ตีสามเอาเบียร์',
+          romanization: 'baa loei dtii saam ao biia',
+          english: 'You maniac, it\'s 3am and you want beer?!',
+        },
+        {
+          speaker: 'B',
+          thai: 'อ้าว แล้วมึงล่ะห่า',
+          romanization: 'aao laew mueng la haa',
+          english: 'And what about you, huh?!',
+        },
+        {
+          speaker: 'A',
+          thai: 'กูเอาน้ำเปล่า กูเป็นคนดี',
+          romanization: 'guu ao naam bplao guu bpen khon dii',
+          english: 'Water for me. I\'m a good person.',
+        },
+        {
+          speaker: 'B',
+          thai: 'โว้ย คนดีหัวควาย คนดีไม่มาเซเว่นตีสาม',
+          romanization: 'wooi khon dii hua khwaai khon dii mai maa seven dtii saam',
+          english: 'Yeah right, "good person" my ass. Good people don\'t come to 7-Eleven at 3am.',
+        },
+        {
+          speaker: 'A',
+          thai: '...เอาเบียร์สองขวดแม่ง',
+          romanization: '...ao biia sawng khuat maeng',
+          english: 'Fine, two bottles of beer, dammit.',
+        },
+      ],
+    },
+  ],
+  assessment: [
+    {
+      type: 'multiple_choice',
+      prompt: 'What does กู mean?',
+      options: ['I/me (crude)', 'You', 'He/she', 'Please'],
+      correctIndex: 0,
+    },
+    {
+      type: 'multiple_choice',
+      prompt: 'Your friend does something spectacularly idiotic. You shout...',
+      options: ['บ้าเลยมึง', 'ขอบคุณครับ', 'สวัสดีค่ะ', 'ยินดีที่ได้รู้จัก'],
+      correctIndex: 0,
+    },
+    {
+      type: 'multiple_choice',
+      prompt: 'สัส is used when...',
+      options: [
+        'Greeting someone politely',
+        'You stub your toe or something goes wrong',
+        'Ordering food',
+        'Saying goodbye',
+      ],
+      correctIndex: 1,
+    },
+    {
+      type: 'multiple_choice',
+      prompt: 'What does ชิบหาย express?',
+      options: ['Gratitude', '"Oh sh*t" frustration', 'Happiness', 'A polite request'],
+      correctIndex: 1,
+    },
+    {
+      type: 'multiple_choice',
+      prompt: 'กู and มึง are used between...',
+      options: [
+        'A student and teacher',
+        'Close friends (or people about to fight)',
+        'At a job interview',
+        'In a letter to the king',
+      ],
+      correctIndex: 1,
+    },
+    {
+      type: 'multiple_choice',
+      prompt: 'What does เหี้ย literally mean?',
+      options: ['Cat', 'Monitor lizard (worst insult)', 'Butterfly', 'Puppy'],
+      correctIndex: 1,
+    },
+  ],
+  srsItemIds: [],
+}

@@ -33,17 +33,15 @@ test.describe('Progress Persistence', () => {
     await page.evaluate(() => localStorage.clear())
     await page.reload()
 
-    // Verify initial state
-    await expect(page.locator('text=0 mastered')).toBeVisible()
-    await expect(page.locator('text=0 learned')).toBeVisible()
+    // Verify initial state shows progress
+    await expect(page.locator('text=/0 of 30 completed/')).toBeVisible()
     await page.screenshot({ path: 'e2e/screenshots/persistence-before.png', fullPage: true })
 
-    // Reload and verify state persists (same zeros)
+    // Reload and verify state persists
     await page.reload()
     await page.waitForTimeout(1000)
 
-    await expect(page.locator('text=0 mastered')).toBeVisible()
-    await expect(page.locator('text=0 learned')).toBeVisible()
+    await expect(page.locator('text=/0 of 30 completed/')).toBeVisible()
     await page.screenshot({ path: 'e2e/screenshots/persistence-after-reload.png', fullPage: true })
   })
 

@@ -33,10 +33,10 @@ export function PracticeStepView({ step, onContinue }: Props) {
   return (
     <div className="flex flex-col gap-4 w-full">
       <div className="flex items-center justify-between">
-        <p className="text-xs text-stone-400 uppercase tracking-wide">
+        <p className="text-xs text-stone-400 dark:text-stone-500 uppercase tracking-wide">
           Practice
         </p>
-        <p className="text-xs text-stone-400">
+        <p className="text-xs text-stone-400 dark:text-stone-500">
           {currentExercise + 1} of {step.exercises.length}
         </p>
       </div>
@@ -48,10 +48,10 @@ export function PracticeStepView({ step, onContinue }: Props) {
             key={i}
             className={`h-1 flex-1 rounded-full ${
               i < currentExercise
-                ? 'bg-stone-700'
+                ? 'bg-stone-700 dark:bg-stone-300'
                 : i === currentExercise
-                  ? 'bg-stone-400'
-                  : 'bg-stone-200'
+                  ? 'bg-stone-400 dark:bg-stone-500'
+                  : 'bg-stone-200 dark:bg-stone-700'
             }`}
           />
         ))}

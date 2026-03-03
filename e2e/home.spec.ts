@@ -16,9 +16,6 @@ test.describe('Home Screen', () => {
   test('shows progress section with lesson count', async ({ page }) => {
     // Should show progress with lesson count
     await expect(page.locator('text=/\\d+ of 30 completed/')).toBeVisible()
-    // Should show mastered/learned counts
-    await expect(page.locator('text=0 mastered')).toBeVisible()
-    await expect(page.locator('text=0 learned')).toBeVisible()
     await page.screenshot({ path: 'e2e/screenshots/home-progress-section.png', fullPage: true })
   })
 

@@ -1,0 +1,193 @@
+import type { RichLesson } from '../lessonTypes'
+
+export const chapter4: RichLesson = {
+  id: 'S04',
+  title: 'Bark Your Order Like a Bangkok Local',
+  goal: 'Learn to order street food the way Thai people actually do -- fast, direct, zero "please," zero patience.',
+  phase: 'tones',
+  order: 3,
+  difficulty: 'beginner',
+  prerequisites: [],
+  steps: [
+    {
+      kind: 'text',
+      content:
+        'Your phrasebook says ขอ...ครับ/ค่ะ (may I please have...). Use that at a Bangkok street stall and the vendor will add 20 baht to your bill for wasting their time. Real Thai: point, grunt, specify. เอาอันนี้! (This one!) ไม่เอาผัก! (NO vegetables!) พิเศษ! (LARGE!) You\'re not at a restaurant. You\'re at war with lunch.',
+    },
+    {
+      kind: 'table',
+      title: 'Vocabulary',
+      headers: ['Thai', 'Romanization', 'Meaning', 'Notes'],
+      rows: [
+        ['เอา', 'ao', 'Want / give me', 'The only word you actually need. Point and say เอา. Done.'],
+        ['ไม่เอา', 'mai ao', "Don't want", 'Said with the same energy as swatting a fly.'],
+        ['อันนี้', 'an nii', 'This one', 'Point aggressively.'],
+        ['เผ็ด', 'phet', 'Spicy', 'WARNING: Thai "a little spicy" = farang "my mouth is dying"'],
+        ['เผ็ดมาก', 'phet maak', 'Very spicy', 'You will regret this. You will order it anyway.'],
+        ['เผ็ดน้อย', 'phet noi', 'A little spicy', 'They will ignore this and make it spicy anyway.'],
+        ['ไม่เผ็ด', 'mai phet', 'Not spicy', 'The vendor will look at you with pity.'],
+        ['พิเศษ', 'phi-set', 'Special (= LARGE portion)', 'The magic word. 10 baht more, 2x the food. Always say this.'],
+        ['ใส่ถุง', 'sai thung', 'Put in bag (takeaway)', 'Thai street food comes in plastic bags. Yes, soup too. In a bag. Deal with it.'],
+        ['กินที่นี่', 'gin thii nii', 'Eat here', "If there's a plastic chair, you're dining in."],
+        ['ไม่ใส่ผัก', 'mai sai phak', 'No vegetables', 'The universal farang request.'],
+        ['ไม่ใส่ผักชี', 'mai sai phak-chii', 'No coriander', 'The REAL universal battle. Half the world hates coriander. The other half is wrong.'],
+        ['ไม่หวาน', 'mai waan', 'Not sweet', 'You will say this. They will add sugar anyway. This is Thailand.'],
+        ['ข้าวเพิ่ม', 'khaao phoeem', 'Extra rice', 'Because one scoop is never enough.'],
+        ['เก็บเงิน', 'gep ngoen', 'Check please', 'Literally "collect money." Efficient.'],
+      ],
+    },
+    {
+      kind: 'table',
+      title: 'Key Phrases',
+      headers: ['Thai', 'Romanization', 'English', 'Reality'],
+      rows: [
+        [
+          'เอาข้าวผัดพิเศษ ไม่ใส่ผักชีสัส',
+          'ao khaao phat phi-set mai sai phak-chii sat',
+          'Large fried rice, NO damn coriander',
+          'Your daily mantra',
+        ],
+        [
+          'เผ็ดน้อยนะ จริงๆ นะ เผ็ดน้อย',
+          'phet noi na, jing jing na, phet noi',
+          'A LITTLE spicy. I mean it. LITTLE.',
+          "They don't care. It's going to be spicy.",
+        ],
+        [
+          'พิเศษเลย ข้าวเพิ่มด้วย',
+          'phi-set loei khaao phoeem duuai',
+          'Large, and extra rice',
+          'This is how you eat for 50 baht and not move for 3 hours',
+        ],
+        [
+          'อร่อยมาก เอาซ้ำอีก',
+          'a-roi maak ao sam iik',
+          'Delicious. Same thing again.',
+          'The vendor loves you now',
+        ],
+        [
+          'แพงไปห่า ร้านข้างๆ ถูกกว่า',
+          'phaeng bpai haa, raan khaang khaang thuuk gwaa',
+          "That's f*cking expensive, the place next door is cheaper",
+          'Nuclear option for overcharging',
+        ],
+      ],
+    },
+    {
+      kind: 'dialogue',
+      title: 'Ordering som tam from a vendor who takes no prisoners',
+      lines: [
+        {
+          speaker: 'You',
+          thai: 'เอาส้มตำหนึ่ง',
+          romanization: 'ao som-dtam nueng',
+          english: 'One som tam',
+        },
+        {
+          speaker: 'Vendor',
+          thai: 'เผ็ดไหม',
+          romanization: 'phet mai',
+          english: 'Spicy?',
+        },
+        {
+          speaker: 'You',
+          thai: 'เผ็ดน้อยนะ',
+          romanization: 'phet noi na',
+          english: 'A little spicy',
+        },
+        {
+          speaker: 'Vendor',
+          thai: '(puts in 5 chilies)',
+          romanization: '',
+          english: '(puts in 5 chilies)',
+        },
+        {
+          speaker: 'You',
+          thai: 'เฮ้ย! บอกว่าเผ็ดน้อย!',
+          romanization: 'hoei! bawk waa phet noi!',
+          english: 'HEY! I said a LITTLE!',
+        },
+        {
+          speaker: 'Vendor',
+          thai: 'นี่น้อยแล้ว ปกติใส่สิบ',
+          romanization: 'nii noi laew, bpok-ga-dti sai sip',
+          english: 'This IS a little. Normally I put 10.',
+        },
+        {
+          speaker: 'You',
+          thai: '......สัส',
+          romanization: '......sat',
+          english: '......damn',
+        },
+        {
+          speaker: 'Vendor',
+          thai: 'กินไม่ได้หรอ ไก่อ่อน',
+          romanization: "gin mai dai raw, gai on",
+          english: "Can't handle it? Chicken.",
+        },
+        {
+          speaker: 'You',
+          thai: 'กินได้! เอามา!',
+          romanization: 'gin dai! ao maa!',
+          english: 'I can handle it! Give it! (takes one bite, entire face turns red)',
+        },
+        {
+          speaker: 'Vendor',
+          thai: '555 ฝรั่งหน้าแดง',
+          romanization: 'haa haa haa farang naa daeng',
+          english: 'Hahaha red-faced farang',
+        },
+        {
+          speaker: 'You',
+          thai: '......น้ำเปล่าห้าขวด',
+          romanization: '......naam bplao haa khuat',
+          english: '......five bottles of water',
+        },
+      ],
+    },
+  ],
+  assessment: [
+    {
+      type: 'multiple_choice',
+      prompt: "How do you say 'No damn coriander'?",
+      options: ['ไม่ใส่ผักชี', 'เอาผักชี', 'ผักชีดี', 'ผักชีเผ็ด'],
+      correctIndex: 0,
+    },
+    {
+      type: 'multiple_choice',
+      prompt: 'What does พิเศษ mean when ordering food?',
+      options: ['Special = large portion', 'Expensive', 'Spicy', 'Takeaway'],
+      correctIndex: 0,
+    },
+    {
+      type: 'multiple_choice',
+      prompt: 'You want bubble tea not sweet. Reality?',
+      options: [
+        'เอาชานม ไม่หวาน (they add sugar anyway)',
+        'เอาชานม หวานมาก',
+        'เอาน้ำเปล่า',
+        'เอาเบียร์',
+      ],
+      correctIndex: 0,
+    },
+    {
+      type: 'multiple_choice',
+      prompt: 'ใส่ถุง means...',
+      options: ['Eat here', 'Put in a bag', 'Add more', 'No spicy'],
+      correctIndex: 1,
+    },
+    {
+      type: 'multiple_choice',
+      prompt: "Thai 'a little spicy' for a farang is...",
+      options: ['Actually mild', 'Still extremely spicy', 'Not spicy at all', 'Ice cold'],
+      correctIndex: 1,
+    },
+    {
+      type: 'multiple_choice',
+      prompt: "The vendor says 'ไก่อ่อน.' She just called you...",
+      options: ['Delicious', 'A chicken (coward/wimp)', 'Beautiful', 'Smart'],
+      correctIndex: 1,
+    },
+  ],
+  srsItemIds: [],
+}

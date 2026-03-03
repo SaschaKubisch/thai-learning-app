@@ -69,32 +69,32 @@ export function MatchView({ exercise, onComplete }: Props) {
   const getLeftClass = (index: number): string => {
     const base = 'px-4 py-3 rounded-lg border-2 text-lg font-medium transition-colors text-center'
     if (matched.has(index)) {
-      return `${base} border-green-300 bg-green-50 text-green-700`
+      return `${base} border-green-300 dark:border-green-600 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300`
     }
     if (wrongPair && wrongPair.left === index) {
-      return `${base} border-red-400 bg-red-50 text-red-700`
+      return `${base} border-red-400 dark:border-red-500 bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-300`
     }
     if (selectedLeft === index) {
-      return `${base} border-stone-900 bg-stone-100 text-stone-900`
+      return `${base} border-stone-900 dark:border-stone-100 bg-stone-100 dark:bg-stone-800 text-stone-900 dark:text-stone-100`
     }
-    return `${base} border-stone-200 bg-white text-stone-800 hover:bg-stone-50`
+    return `${base} border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-800 dark:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800`
   }
 
   const getRightClass = (rightIndex: number): string => {
     const base = 'px-4 py-3 rounded-lg border-2 text-lg font-medium transition-colors text-center'
     const item = shuffledRight[rightIndex]
     if (matched.has(item.pairIndex)) {
-      return `${base} border-green-300 bg-green-50 text-green-700`
+      return `${base} border-green-300 dark:border-green-600 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300`
     }
     if (wrongPair && wrongPair.right === rightIndex) {
-      return `${base} border-red-400 bg-red-50 text-red-700`
+      return `${base} border-red-400 dark:border-red-500 bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-300`
     }
-    return `${base} border-stone-200 bg-white text-stone-800 hover:bg-stone-50`
+    return `${base} border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-800 dark:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800`
   }
 
   return (
     <div className="flex flex-col gap-6 w-full">
-      <p className="text-stone-500 text-sm text-center">
+      <p className="text-stone-500 dark:text-stone-400 text-sm text-center">
         Tap to match each pair
       </p>
       <div className="grid grid-cols-2 gap-3">

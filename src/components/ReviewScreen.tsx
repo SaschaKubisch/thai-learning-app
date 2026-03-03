@@ -79,23 +79,23 @@ export function ReviewScreen() {
 
   if (!initialized) {
     return (
-      <div className="min-h-screen bg-stone-50 flex items-center justify-center">
-        <p className="text-stone-500">Loading...</p>
+      <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex items-center justify-center">
+        <p className="text-stone-500 dark:text-stone-400">Loading...</p>
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen bg-stone-50 flex flex-col">
+    <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex flex-col">
       {/* Header */}
       <div className="px-6 pt-4 pb-2 flex items-center justify-between">
         <button
           onClick={() => navigate('/')}
-          className="text-stone-400 hover:text-stone-600 text-sm"
+          className="text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 text-sm"
         >
           Exit
         </button>
-        <span className="text-sm text-stone-400 uppercase tracking-wide">
+        <span className="text-sm text-stone-400 dark:text-stone-500 uppercase tracking-wide">
           Review
         </span>
         <div className="w-8" />
@@ -105,7 +105,7 @@ export function ReviewScreen() {
       {!isComplete && dueRecords.length > 0 && (
         <div className="px-6 pb-2">
           <ProgressBar current={currentIndex} total={dueRecords.length} />
-          <p className="text-xs text-stone-400 mt-1 text-center">
+          <p className="text-xs text-stone-400 dark:text-stone-500 mt-1 text-center">
             {currentIndex + 1} of {dueRecords.length}
           </p>
         </div>
@@ -122,27 +122,27 @@ export function ReviewScreen() {
           {/* Summary */}
           {isComplete && (
             <div className="flex flex-col items-center gap-6">
-              <div className="text-4xl font-bold text-stone-900">
+              <div className="text-4xl font-bold text-stone-900 dark:text-stone-50">
                 Review Complete
               </div>
               {dueRecords.length > 0 ? (
                 <>
-                  <p className="text-stone-500 text-lg">
+                  <p className="text-stone-500 dark:text-stone-400 text-lg">
                     {correctCount} of {dueRecords.length} correct (
                     {Math.round((correctCount / dueRecords.length) * 100)}%)
                   </p>
-                  <p className="text-stone-400 text-sm">
+                  <p className="text-stone-400 dark:text-stone-500 text-sm">
                     Check back tomorrow for more reviews.
                   </p>
                 </>
               ) : (
-                <p className="text-stone-500 text-lg">
+                <p className="text-stone-500 dark:text-stone-400 text-lg">
                   No reviews due right now.
                 </p>
               )}
               <button
                 onClick={() => navigate('/')}
-                className="w-full py-4 rounded-xl bg-stone-900 text-white font-semibold text-lg hover:bg-stone-800 transition-colors"
+                className="w-full py-4 rounded-xl bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 font-semibold text-lg hover:bg-stone-800 dark:hover:bg-stone-200 transition-colors"
               >
                 Back to Home
               </button>

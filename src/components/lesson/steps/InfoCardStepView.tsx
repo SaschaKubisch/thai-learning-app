@@ -24,24 +24,24 @@ export function InfoCardStepView({ step, onContinue }: Props) {
     <div className="flex flex-col items-center gap-6">
       <div className="flex flex-col items-center gap-4 animate-[fadeIn_150ms_ease-in]" key={currentIndex}>
         <div className="flex items-center gap-3">
-          <span className="text-6xl sm:text-8xl font-bold text-stone-900">
+          <span className="text-6xl sm:text-8xl font-bold text-stone-900 dark:text-stone-50">
             {item.thai}
           </span>
           <AudioButton text={item.audioText || item.thai} size="lg" />
         </div>
-        <span className="text-xl text-stone-600">{item.romanization}</span>
-        <span className="text-lg text-stone-500">{item.english}</span>
+        <span className="text-xl text-stone-600 dark:text-stone-300">{item.romanization}</span>
+        <span className="text-lg text-stone-500 dark:text-stone-400">{item.english}</span>
         {item.detail && (
-          <span className="text-sm text-stone-400">{item.detail}</span>
+          <span className="text-sm text-stone-400 dark:text-stone-500">{item.detail}</span>
         )}
       </div>
       <button
         onClick={handleNext}
-        className="w-full py-4 rounded-xl bg-stone-900 text-white font-semibold text-lg hover:bg-stone-800 transition-colors"
+        className="w-full py-4 rounded-xl bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 font-semibold text-lg hover:bg-stone-800 dark:hover:bg-stone-200 transition-colors"
       >
         {isLast ? 'Continue' : 'Next'}
       </button>
-      <p className="text-xs text-stone-400">
+      <p className="text-xs text-stone-400 dark:text-stone-500">
         {currentIndex + 1} of {step.items.length}
       </p>
     </div>

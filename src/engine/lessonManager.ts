@@ -22,6 +22,10 @@ export function initLessonManager(
 
 // === Rich Lesson Support ===
 
+export function switchRichLessons(newLessons: RichLesson[]): void {
+  allRichLessons = newLessons
+}
+
 export function getRichLessons(): RichLesson[] {
   return allRichLessons
 }
@@ -71,9 +75,11 @@ export function completeRichLesson(
   const existingResult = newState.lessonResults[lessonId]
   const bestScore = existingResult ? Math.max(existingResult.bestScore, score) : score
 
+  const isStreetThai = lessonId.startsWith('S')
+
   newState = {
     ...newState,
-    currentLesson: Math.max(newState.currentLesson, lessonIndex + 1),
+    currentLesson: isStreetThai ? newState.currentLesson : Math.max(newState.currentLesson, lessonIndex + 1),
     lastSessionDate: now.toISOString(),
     lessonResults: {
       ...newState.lessonResults,

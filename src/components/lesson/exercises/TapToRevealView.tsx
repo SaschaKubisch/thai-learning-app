@@ -26,21 +26,21 @@ export function TapToRevealView({ exercise, onComplete }: Props) {
 
   return (
     <div className="flex flex-col items-center gap-6 w-full">
-      <p className="text-stone-500 text-sm text-center">
+      <p className="text-stone-500 dark:text-stone-400 text-sm text-center">
         Tap to reveal the answer
       </p>
 
       <button
         onClick={handleTap}
-        className="w-full min-h-[200px] rounded-xl border-2 border-stone-200 bg-white flex flex-col items-center justify-center gap-4 p-8 hover:bg-stone-50 transition-colors"
+        className="w-full min-h-[200px] rounded-xl border-2 border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900 flex flex-col items-center justify-center gap-4 p-8 hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors"
       >
-        <span className="text-4xl sm:text-6xl font-bold text-stone-900">
+        <span className="text-4xl sm:text-6xl font-bold text-stone-900 dark:text-stone-50">
           {card.front}
         </span>
         {revealed && (
           <div className="flex flex-col items-center gap-2 animate-[fadeIn_200ms_ease-in]">
-            <div className="w-16 h-px bg-stone-200" />
-            <span className="text-2xl text-stone-600">{card.back}</span>
+            <div className="w-16 h-px bg-stone-200 dark:bg-stone-700" />
+            <span className="text-2xl text-stone-600 dark:text-stone-300">{card.back}</span>
           </div>
         )}
       </button>
@@ -51,18 +51,18 @@ export function TapToRevealView({ exercise, onComplete }: Props) {
 
       <div className="flex items-center gap-4">
         {!revealed ? (
-          <p className="text-xs text-stone-400">Tap card to reveal</p>
+          <p className="text-xs text-stone-400 dark:text-stone-500">Tap card to reveal</p>
         ) : (
           <button
             onClick={handleTap}
-            className="px-6 py-3 rounded-xl bg-stone-900 text-white font-semibold hover:bg-stone-800 transition-colors"
+            className="px-6 py-3 rounded-xl bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 font-semibold hover:bg-stone-800 dark:hover:bg-stone-200 transition-colors"
           >
             {isLast ? 'Done' : 'Next card'}
           </button>
         )}
       </div>
 
-      <p className="text-xs text-stone-400">
+      <p className="text-xs text-stone-400 dark:text-stone-500">
         {currentIndex + 1} of {exercise.cards.length}
       </p>
     </div>
