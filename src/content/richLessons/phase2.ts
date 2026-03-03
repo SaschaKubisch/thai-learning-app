@@ -141,6 +141,14 @@ export const phase2Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: ['sara_aa', 'sara_ii', 'sara_uu'],
+    skillPreview: {
+      heading: 'You\'ll read words with long vowels',
+      examples: [
+        { thai: 'ตา', romanization: 'dtaa', meaning: 'eye' },
+        { thai: 'ดี', romanization: 'dii', meaning: 'good' },
+        { thai: 'ดู', romanization: 'duu', meaning: 'to watch' },
+      ],
+    },
   },
 
   // === LESSON 7: Front Vowels ===
@@ -250,6 +258,14 @@ export const phase2Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: ['sara_ee', 'sara_ae'],
+    skillPreview: {
+      heading: 'You\'ll read more vowel patterns',
+      examples: [
+        { thai: 'เก', romanization: 'gee', meaning: 'to be stuck' },
+        { thai: 'แก', romanization: 'gae', meaning: 'to fix' },
+        { thai: 'เดิน', romanization: 'dəən', meaning: 'to walk' },
+      ],
+    },
   },
 
   // === LESSON 8: More Long Vowels ===
@@ -358,6 +374,14 @@ export const phase2Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: ['sara_oo', 'sara_aw'],
+    skillPreview: {
+      heading: 'You\'ll recognize round vowel sounds',
+      examples: [
+        { thai: 'โต', romanization: 'dtoo', meaning: 'to grow up' },
+        { thai: 'ก่อ', romanization: 'gàw', meaning: 'to build' },
+        { thai: 'โอ', romanization: 'oo', meaning: 'oh!' },
+      ],
+    },
   },
 
   // === LESSON 9: Short Vowels ===
@@ -472,6 +496,14 @@ export const phase2Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: ['sara_i', 'sara_u'],
+    skillPreview: {
+      heading: 'You\'ll hear the difference between short and long',
+      examples: [
+        { thai: 'จะ', romanization: 'jà', meaning: 'will' },
+        { thai: 'ติ', romanization: 'dtì', meaning: 'to criticize' },
+        { thai: 'ดุ', romanization: 'dù', meaning: 'to scold' },
+      ],
+    },
   },
 
   // === LESSON 10: Special Vowels ===
@@ -583,5 +615,13 @@ export const phase2Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: ['sara_am', 'sara_ai_maimalai', 'mai_han_akat'],
+    skillPreview: {
+      heading: 'You\'ll read complex vowel combinations',
+      examples: [
+        { thai: 'ใจ', romanization: 'jai', meaning: 'heart, mind' },
+        { thai: 'ไป', romanization: 'bpai', meaning: 'to go' },
+        { thai: 'เมา', romanization: 'mao', meaning: 'to be drunk' },
+      ],
+    },
   },
 ]

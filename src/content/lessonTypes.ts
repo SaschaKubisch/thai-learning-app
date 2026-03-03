@@ -130,6 +130,17 @@ export type RichLessonPhase =
 
 export type Difficulty = 'beginner' | 'elementary' | 'intermediate'
 
+export interface SkillPreviewExample {
+  thai: string
+  romanization: string
+  meaning: string
+}
+
+export interface SkillPreview {
+  heading: string
+  examples: SkillPreviewExample[]
+}
+
 export interface RichLesson {
   id: string
   title: string
@@ -141,4 +152,5 @@ export interface RichLesson {
   steps: LessonStep[]
   assessment: AssessmentQuestion[]
   srsItemIds: string[] // content item IDs to add to SRS on completion
+  skillPreview?: SkillPreview
 }

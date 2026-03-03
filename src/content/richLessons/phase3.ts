@@ -120,6 +120,14 @@ export const phase3Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: ['sor_suea', 'for_faa', 'phor_phueng'],
+    skillPreview: {
+      heading: 'You\'ll read words with aspirated consonants',
+      examples: [
+        { thai: 'สวย', romanization: 'sǔay', meaning: 'beautiful' },
+        { thai: 'ฝน', romanization: 'fǒn', meaning: 'rain' },
+        { thai: 'ผู้', romanization: 'pûu', meaning: 'person' },
+      ],
+    },
   },
 
   // === LESSON 12: First Low-Class Consonants ===
@@ -238,6 +246,14 @@ export const phase3Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: ['khor_khwaai', 'ngor_nguu', 'nor_nuu'],
+    skillPreview: {
+      heading: 'You\'ll read words with low-class consonants',
+      examples: [
+        { thai: 'คน', romanization: 'kon', meaning: 'person' },
+        { thai: 'ง่าย', romanization: 'ngâai', meaning: 'easy' },
+        { thai: 'นา', romanization: 'naa', meaning: 'rice field' },
+      ],
+    },
   },
 
   // === LESSON 13: More Low-Class Consonants ===
@@ -360,6 +376,14 @@ export const phase3Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: ['mor_maa', 'ror_ruea', 'lor_ling', 'wor_waen'],
+    skillPreview: {
+      heading: 'You\'ll read everyday Thai words',
+      examples: [
+        { thai: 'มา', romanization: 'maa', meaning: 'to come' },
+        { thai: 'รู้', romanization: 'rúu', meaning: 'to know' },
+        { thai: 'วัน', romanization: 'wan', meaning: 'day' },
+      ],
+    },
   },
 
   // === LESSON 14: Low-Class th, ch, y ===
@@ -480,6 +504,14 @@ export const phase3Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: ['thor_thong', 'chor_chaang', 'yor_yak'],
+    skillPreview: {
+      heading: 'You\'ll read common Thai words',
+      examples: [
+        { thai: 'ทำ', romanization: 'tam', meaning: 'to do' },
+        { thai: 'ชอบ', romanization: 'châwp', meaning: 'to like' },
+        { thai: 'ยัง', romanization: 'yang', meaning: 'still, yet' },
+      ],
+    },
   },
 
   // === LESSON 15: Reading Real Words ===
@@ -610,5 +642,13 @@ export const phase3Lessons: RichLesson[] = [
       },
     ],
     srsItemIds: [],
+    skillPreview: {
+      heading: 'You\'ll read signs and everyday text',
+      examples: [
+        { thai: 'ร้านอาหาร', romanization: 'ráan aa-hǎan', meaning: 'restaurant' },
+        { thai: 'ข้าวผัด', romanization: 'kâao pàt', meaning: 'fried rice' },
+        { thai: 'น้ำ', romanization: 'náam', meaning: 'water' },
+      ],
+    },
   },
 ]
