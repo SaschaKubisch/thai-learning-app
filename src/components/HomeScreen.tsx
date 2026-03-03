@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useProgress } from '../hooks/useProgress'
 import { getRichLessons } from '../engine/lessonManager'
-import { getDueItems, getStats } from '../engine/srsScheduler'
+import { getDueItems } from '../engine/srsScheduler'
 import { ProgressBar } from './ProgressBar'
 import { useAudio } from '../hooks/useAudio'
 import type { RichLesson, RichLessonPhase } from '../content/lessonTypes'
@@ -57,7 +57,6 @@ export function HomeScreen() {
 
   const allLessons = getRichLessons()
   const grouped = groupByPhase(allLessons)
-  const stats = getStats(state)
   const dueItems = getDueItems(state)
   const dueCount = dueItems.length
   const currentLessonIndex = state.currentLesson
@@ -103,10 +102,6 @@ export function HomeScreen() {
             </span>
           </div>
           <ProgressBar current={currentLessonIndex} total={allLessons.length} />
-          <div className="flex justify-between mt-4 text-sm text-stone-500">
-            <span>{stats.mastered} mastered</span>
-            <span>{stats.total} learned</span>
-          </div>
         </div>
 
         {/* Action buttons */}
