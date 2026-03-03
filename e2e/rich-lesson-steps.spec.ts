@@ -63,9 +63,10 @@ test.describe('Rich Lesson - Step Navigation', () => {
     test.setTimeout(30_000)
 
     await page.click('button:has-text("Next Lesson")')
+    await expect(page.locator('text=Welcome to Thai reading')).toBeVisible()
 
     // Progress bar should be visible
-    const progressSegments = page.locator('.flex.gap-1 > div')
+    const progressSegments = page.locator('.flex.gap-1.w-full > div')
     const segmentCount = await progressSegments.count()
     expect(segmentCount).toBeGreaterThan(0)
 

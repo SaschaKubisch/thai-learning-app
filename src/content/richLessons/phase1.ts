@@ -56,6 +56,40 @@ export const phase1Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'ไก่',
+            romanization: 'gai',
+            english: 'chicken',
+            detail: 'Uses ก (gaw) -- your first real Thai word.',
+            audioText: 'ไก่',
+          },
+          {
+            thai: 'จาน',
+            romanization: 'jaan',
+            english: 'plate',
+            detail: 'Uses จ (jaw).',
+            audioText: 'จาน',
+          },
+          {
+            thai: 'ดี',
+            romanization: 'dii',
+            english: 'good',
+            detail: 'Uses ด (daw). One of the most common Thai words.',
+            audioText: 'ดี',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'You can already make mini-phrases. Thai often places the adjective after the noun. "ไก่ดี" means "good chicken."',
+        examples: [
+          { thai: 'ไก่ดี', romanization: 'gai dii', english: 'good chicken' },
+          { thai: 'จานดี', romanization: 'jaan dii', english: 'good plate' },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -79,6 +113,22 @@ export const phase1Lessons: RichLesson[] = [
             prompt: 'Which consonant makes the "d" sound?',
             options: ['ก', 'จ', 'ด', 'บ'],
             correctIndex: 2,
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does ไก่ mean?',
+            promptThai: 'ไก่',
+            options: ['plate', 'child', 'chicken', 'good'],
+            correctIndex: 2,
+            audioText: 'ไก่',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does ดี mean?',
+            promptThai: 'ดี',
+            options: ['chicken', 'good', 'plate', 'child'],
+            correctIndex: 1,
+            audioText: 'ดี',
           },
           {
             type: 'tap_to_reveal',
@@ -115,20 +165,22 @@ export const phase1Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'What sound does this consonant make?',
-        promptThai: 'จ',
-        options: ['daw', 'baw', 'jaw', 'gaw'],
+        prompt: 'What does ไก่ mean?',
+        promptThai: 'ไก่',
+        options: ['plate', 'good', 'chicken', 'child'],
         correctIndex: 2,
-        audioText: 'จอ',
+        audioText: 'ไก่',
       },
       {
         type: 'multiple_choice',
-        prompt: 'Which consonant makes the "g" sound?',
-        options: ['จ', 'ด', 'บ', 'ก'],
+        prompt: 'What does จาน mean?',
+        promptThai: 'จาน',
+        options: ['chicken', 'good', 'child', 'plate'],
         correctIndex: 3,
+        audioText: 'จาน',
       },
     ],
-    srsItemIds: ['kor_kai', 'jor_jaan', 'dor_dek'],
+    srsItemIds: ['kor_kai', 'jor_jaan', 'dor_dek', 'w_kai', 'w_jaan', 'w_dii'],
     skillPreview: {
       heading: 'You\'ll recognize your first Thai words',
       examples: [
@@ -189,6 +241,41 @@ export const phase1Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'ตา',
+            romanization: 'dtaa',
+            english: 'eye / grandfather',
+            detail: 'Uses ต (dtaw). A very common word.',
+            audioText: 'ตา',
+          },
+          {
+            thai: 'บ้าน',
+            romanization: 'baan',
+            english: 'house',
+            detail: 'Uses บ (baw). The tone mark changes the tone.',
+            audioText: 'บ้าน',
+          },
+          {
+            thai: 'ปลา',
+            romanization: 'bplaa',
+            english: 'fish',
+            detail: 'Uses ป (bpaw). A consonant cluster: ปล.',
+            audioText: 'ปลา',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'You can describe things as "good" using ดี after the noun. This pattern works with your new words too.',
+        examples: [
+          { thai: 'ตาดี', romanization: 'dtaa dii', english: 'good eyesight' },
+          { thai: 'ปลาดี', romanization: 'bplaa dii', english: 'good fish' },
+          { thai: 'บ้านดี', romanization: 'baan dii', english: 'good house' },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -212,6 +299,22 @@ export const phase1Lessons: RichLesson[] = [
             options: ['daw', 'bpaw', 'jaw', 'dtaw'],
             correctIndex: 1,
             audioText: 'ปอ',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does ตา mean?',
+            promptThai: 'ตา',
+            options: ['house', 'fish', 'eye', 'good'],
+            correctIndex: 2,
+            audioText: 'ตา',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does บ้าน mean?',
+            promptThai: 'บ้าน',
+            options: ['fish', 'house', 'eye', 'plate'],
+            correctIndex: 1,
+            audioText: 'บ้าน',
           },
           {
             type: 'match',
@@ -241,11 +344,11 @@ export const phase1Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'What sound does this consonant make?',
-        promptThai: 'ป',
-        options: ['baw', 'gaw', 'bpaw', 'dtaw'],
+        prompt: 'What does ปลา mean?',
+        promptThai: 'ปลา',
+        options: ['eye', 'house', 'fish', 'good'],
         correctIndex: 2,
-        audioText: 'ปอ',
+        audioText: 'ปลา',
       },
       {
         type: 'multiple_choice',
@@ -255,12 +358,12 @@ export const phase1Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'Which consonant makes the "bp" sound?',
-        options: ['ต', 'บ', 'ก', 'ป'],
-        correctIndex: 3,
+        prompt: 'What does ตาดี mean?',
+        options: ['good house', 'good fish', 'good eyesight', 'good plate'],
+        correctIndex: 2,
       },
     ],
-    srsItemIds: ['dtor_dtao', 'bor_baimai', 'por_plaa'],
+    srsItemIds: ['dtor_dtao', 'bor_baimai', 'por_plaa', 'w_dtaa', 'w_baan', 'w_bplaa'],
     skillPreview: {
       heading: 'You\'ll read more Thai words',
       examples: [
@@ -329,6 +432,26 @@ export const phase1Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'อา',
+            romanization: 'aa',
+            english: 'uncle / aunt',
+            detail: 'Uses อ (aw) as the consonant carrying the vowel -า.',
+            audioText: 'อา',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'When อ starts a syllable, it is a silent consonant that carries the vowel. You already know words that use this: ตา (eye) uses ต, while อา (uncle) uses อ.',
+        examples: [
+          { thai: 'ตาดี', romanization: 'dtaa dii', english: 'good eyesight' },
+          { thai: 'กาดี', romanization: 'gaa dii', english: 'a good crow' },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -347,6 +470,14 @@ export const phase1Lessons: RichLesson[] = [
             prompt: 'Which class do all 9 of these consonants belong to?',
             options: ['High class', 'Low class', 'Mid class', 'Special class'],
             correctIndex: 2,
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does อา mean?',
+            promptThai: 'อา',
+            options: ['basin', 'uncle/aunt', 'crow', 'eye'],
+            correctIndex: 1,
+            audioText: 'อา',
           },
           {
             type: 'match',
@@ -382,9 +513,11 @@ export const phase1Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'ฎ and ฏ are mostly found in words from which languages?',
-        options: ['Chinese and Japanese', 'English and French', 'Pali and Sanskrit', 'Khmer and Lao'],
+        prompt: 'What does อา mean?',
+        promptThai: 'อา',
+        options: ['basin', 'crow', 'uncle/aunt', 'eye'],
         correctIndex: 2,
+        audioText: 'อา',
       },
       {
         type: 'multiple_choice',
@@ -393,7 +526,7 @@ export const phase1Lessons: RichLesson[] = [
         correctIndex: 3,
       },
     ],
-    srsItemIds: ['dor_chada', 'dtor_patak', 'or_ang'],
+    srsItemIds: ['dor_chada', 'dtor_patak', 'or_ang', 'w_aa'],
     skillPreview: {
       heading: 'You\'ll know all 9 mid-class consonants',
       examples: [
@@ -443,6 +576,26 @@ export const phase1Lessons: RichLesson[] = [
           'For now, just remember: **mid-class consonants produce mid tone** in simple syllables (with a long vowel and no tone mark). We will learn the full tone rules in the Tones phase.\n\nNext, let us meet some high-class consonants.',
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'กา',
+            romanization: 'gaa',
+            english: 'crow',
+            detail: 'ก (mid class) + -า = mid tone. The tone is flat and neutral.',
+            audioText: 'กา',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'Same sound, different class, different tone. กา (crow) uses mid-class ก and has a mid tone. ขา (leg) uses high-class ข and has a rising tone. The consonant class changes the tone.',
+        examples: [
+          { thai: 'กา', romanization: 'gaa (mid tone)', english: 'crow -- mid class ก' },
+          { thai: 'ขา', romanization: 'khaa (rising tone)', english: 'leg -- high class ข' },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -462,6 +615,14 @@ export const phase1Lessons: RichLesson[] = [
             prompt: 'Two consonants can make the same sound but belong to different classes. True or false?',
             options: ['True', 'False'],
             correctIndex: 0,
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does กา mean?',
+            promptThai: 'กา',
+            options: ['leg', 'crow', 'eye', 'house'],
+            correctIndex: 1,
+            audioText: 'กา',
           },
         ],
       },
@@ -492,12 +653,12 @@ export const phase1Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'A mid-class consonant with a long vowel and no tone mark produces what tone?',
-        options: ['Low tone', 'High tone', 'Mid tone', 'Falling tone'],
+        prompt: 'กา (crow) has a mid tone because ก is what class?',
+        options: ['Low class', 'High class', 'Mid class', 'Special class'],
         correctIndex: 2,
       },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_kaa'],
     skillPreview: {
       heading: 'You\'ll understand the three consonant classes',
       examples: [
@@ -558,6 +719,40 @@ export const phase1Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'ไข่',
+            romanization: 'khai',
+            english: 'egg',
+            detail: 'Uses ข (kaw, high class). The keyword for ข.',
+            audioText: 'ไข่',
+          },
+          {
+            thai: 'ถุง',
+            romanization: 'thung',
+            english: 'bag',
+            detail: 'Uses ถ (taw, high class). The keyword for ถ.',
+            audioText: 'ถุง',
+          },
+          {
+            thai: 'ขา',
+            romanization: 'khaa',
+            english: 'leg',
+            detail: 'Uses ข (kaw, high class) + -า vowel.',
+            audioText: 'ขา',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'You already know ไก่ (chicken). Now you know ไข่ (egg). Both use the ไ- vowel (ai sound), but different consonants: ก (mid class) vs ข (high class).',
+        examples: [
+          { thai: 'ไข่ดี', romanization: 'khai dii', english: 'good egg' },
+          { thai: 'กินไข่', romanization: 'gin khai', english: 'eat egg' },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -575,6 +770,22 @@ export const phase1Lessons: RichLesson[] = [
             options: ['kaw', 'taw', 'chaw', 'saw'],
             correctIndex: 2,
             audioText: 'ฉอ',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does ไข่ mean?',
+            promptThai: 'ไข่',
+            options: ['chicken', 'egg', 'bag', 'leg'],
+            correctIndex: 1,
+            audioText: 'ไข่',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does ขา mean?',
+            promptThai: 'ขา',
+            options: ['egg', 'bag', 'leg', 'crow'],
+            correctIndex: 2,
+            audioText: 'ขา',
           },
           {
             type: 'match',
@@ -610,14 +821,11 @@ export const phase1Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'High-class consonants are aspirated. What does aspirated mean?',
-        options: [
-          'Pronounced silently',
-          'Pronounced with a puff of air',
-          'Pronounced nasally',
-          'Pronounced quickly',
-        ],
-        correctIndex: 1,
+        prompt: 'What does ไข่ mean?',
+        promptThai: 'ไข่',
+        options: ['chicken', 'leg', 'egg', 'bag'],
+        correctIndex: 2,
+        audioText: 'ไข่',
       },
       {
         type: 'multiple_choice',
@@ -633,7 +841,7 @@ export const phase1Lessons: RichLesson[] = [
         correctIndex: 1,
       },
     ],
-    srsItemIds: ['khor_khai', 'chor_ching', 'thor_thung'],
+    srsItemIds: ['khor_khai', 'chor_ching', 'thor_thung', 'w_khai', 'w_thung', 'w_khaa'],
     skillPreview: {
       heading: 'You\'ll read high-class consonant words',
       examples: [

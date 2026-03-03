@@ -66,6 +66,40 @@ export const phase2Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'ตา',
+            romanization: 'dtaa',
+            english: 'eye / grandfather',
+            detail: 'ต + -า = dtaa. Uses the long "aa" vowel.',
+            audioText: 'ตา',
+          },
+          {
+            thai: 'ดี',
+            romanization: 'dii',
+            english: 'good',
+            detail: 'ด + -ี = dii. Uses the long "ii" vowel.',
+            audioText: 'ดี',
+          },
+          {
+            thai: 'ดู',
+            romanization: 'duu',
+            english: 'to watch / to look',
+            detail: 'ด + -ู = duu. Uses the long "uu" vowel.',
+            audioText: 'ดู',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'Now you can read real words. ตาดี means "good eyesight" and ดูดี means "looks good." Thai places the adjective after the word it describes.',
+        examples: [
+          { thai: 'ตาดี', romanization: 'dtaa dii', english: 'good eyesight' },
+          { thai: 'ดูดี', romanization: 'duu dii', english: 'looks good' },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -91,6 +125,14 @@ export const phase2Lessons: RichLesson[] = [
             correctIndex: 3,
           },
           {
+            type: 'multiple_choice',
+            prompt: 'What does ดู mean?',
+            promptThai: 'ดู',
+            options: ['good', 'eye', 'to watch', 'crow'],
+            correctIndex: 2,
+            audioText: 'ดู',
+          },
+          {
             type: 'match',
             pairs: [
               { left: 'กา', right: 'gaa' },
@@ -113,11 +155,11 @@ export const phase2Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'How do you pronounce this?',
-        promptThai: 'ปู',
-        options: ['bpaa', 'bpii', 'bpuu', 'buu'],
+        prompt: 'What does ดี mean?',
+        promptThai: 'ดี',
+        options: ['to watch', 'eye', 'good', 'crow'],
         correctIndex: 2,
-        audioText: 'ปู',
+        audioText: 'ดี',
       },
       {
         type: 'multiple_choice',
@@ -127,11 +169,9 @@ export const phase2Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'How do you pronounce this?',
-        promptThai: 'จา',
-        options: ['juu', 'jii', 'jaa', 'gaa'],
+        prompt: 'What does ตาดี mean?',
+        options: ['good crow', 'looks good', 'good eyesight', 'to watch'],
         correctIndex: 2,
-        audioText: 'จา',
       },
       {
         type: 'multiple_choice',
@@ -140,7 +180,7 @@ export const phase2Lessons: RichLesson[] = [
         correctIndex: 1,
       },
     ],
-    srsItemIds: ['sara_aa', 'sara_ii', 'sara_uu'],
+    srsItemIds: ['sara_aa', 'sara_ii', 'sara_uu', 'w_dtaa', 'w_dii', 'w_duu'],
     skillPreview: {
       heading: 'You\'ll read words with long vowels',
       examples: [
@@ -195,6 +235,32 @@ export const phase2Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'เก',
+            romanization: 'gee',
+            english: 'old (thing)',
+            detail: 'ก + เ- = gee. The vowel เ- appears before ก.',
+            audioText: 'เก',
+          },
+          {
+            thai: 'แก',
+            romanization: 'gae',
+            english: 'you (informal)',
+            detail: 'ก + แ- = gae. Informal way to say "you."',
+            audioText: 'แก',
+          },
+          {
+            thai: 'แบ',
+            romanization: 'bae',
+            english: 'flat',
+            detail: 'บ + แ- = bae.',
+            audioText: 'แบ',
+          },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -212,6 +278,14 @@ export const phase2Lessons: RichLesson[] = [
             options: ['dee', 'daa', 'dae', 'duu'],
             correctIndex: 2,
             audioText: 'แด',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does แก mean?',
+            promptThai: 'แก',
+            options: ['old', 'you (informal)', 'flat', 'good'],
+            correctIndex: 1,
+            audioText: 'แก',
           },
           {
             type: 'match',
@@ -250,14 +324,14 @@ export const phase2Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'How do you pronounce this?',
-        promptThai: 'แจ',
-        options: ['jii', 'jee', 'jae', 'jaa'],
+        prompt: 'What does เก mean?',
+        promptThai: 'เก',
+        options: ['flat', 'you (informal)', 'old (thing)', 'good'],
         correctIndex: 2,
-        audioText: 'แจ',
+        audioText: 'เก',
       },
     ],
-    srsItemIds: ['sara_ee', 'sara_ae'],
+    srsItemIds: ['sara_ee', 'sara_ae', 'w_gee', 'w_gae', 'w_bae'],
     skillPreview: {
       heading: 'You\'ll read more vowel patterns',
       examples: [
@@ -311,6 +385,40 @@ export const phase2Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'โต',
+            romanization: 'dtoo',
+            english: 'big / to grow',
+            detail: 'ต + โ- = dtoo. Uses the "oo" vowel before the consonant.',
+            audioText: 'โต',
+          },
+          {
+            thai: 'จอ',
+            romanization: 'jaw',
+            english: 'screen',
+            detail: 'จ + -อ = jaw. Uses the "aw" vowel after the consonant.',
+            audioText: 'จอ',
+          },
+          {
+            thai: 'กอ',
+            romanization: 'gaw',
+            english: 'to hug',
+            detail: 'ก + -อ = gaw.',
+            audioText: 'กอ',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'You can now make short phrases with these words. โตดี means "grows well" and จอโต means "big screen."',
+        examples: [
+          { thai: 'โตดี', romanization: 'dtoo dii', english: 'grows well' },
+          { thai: 'จอโต', romanization: 'jaw dtoo', english: 'big screen' },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -328,6 +436,22 @@ export const phase2Lessons: RichLesson[] = [
             options: ['doo', 'dee', 'daw', 'daa'],
             correctIndex: 2,
             audioText: 'ดอ',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does โต mean?',
+            promptThai: 'โต',
+            options: ['screen', 'to hug', 'big', 'good'],
+            correctIndex: 2,
+            audioText: 'โต',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does จอ mean?',
+            promptThai: 'จอ',
+            options: ['to hug', 'screen', 'big', 'crow'],
+            correctIndex: 1,
+            audioText: 'จอ',
           },
           {
             type: 'match',
@@ -352,9 +476,9 @@ export const phase2Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'How do you pronounce this?',
+        prompt: 'What does จอ mean?',
         promptThai: 'จอ',
-        options: ['joo', 'jaa', 'jaw', 'jee'],
+        options: ['to hug', 'big', 'screen', 'crow'],
         correctIndex: 2,
         audioText: 'จอ',
       },
@@ -373,7 +497,7 @@ export const phase2Lessons: RichLesson[] = [
         audioText: 'โป',
       },
     ],
-    srsItemIds: ['sara_oo', 'sara_aw'],
+    srsItemIds: ['sara_oo', 'sara_aw', 'w_dtoo', 'w_jor', 'w_gor'],
     skillPreview: {
       heading: 'You\'ll recognize round vowel sounds',
       examples: [
@@ -429,6 +553,33 @@ export const phase2Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'ดิ',
+            romanization: 'di',
+            english: 'go on (particle)',
+            detail: 'Short -ิ vowel. Compare: ดี (dii, long) = good vs ดิ (di, short) = particle.',
+            audioText: 'ดิ',
+          },
+          {
+            thai: 'ดุ',
+            romanization: 'du',
+            english: 'fierce / to scold',
+            detail: 'Short -ุ vowel. Compare: ดู (duu, long) = to watch vs ดุ (du, short) = fierce.',
+            audioText: 'ดุ',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'Short and long vowels change meaning. ดี (dii, long) means "good" but ดิ (di, short) is a casual particle meaning "go on." ดู (duu, long) means "to watch" but ดุ (du, short) means "fierce."',
+        examples: [
+          { thai: 'ดี', romanization: 'dii (long)', english: 'good' },
+          { thai: 'ดิ', romanization: 'di (short)', english: 'go on (particle)' },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -445,6 +596,14 @@ export const phase2Lessons: RichLesson[] = [
             promptThai: 'ดุ',
             options: ['duu (long)', 'du (short)', 'dii (long)', 'di (short)'],
             correctIndex: 1,
+            audioText: 'ดุ',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does ดุ mean?',
+            promptThai: 'ดุ',
+            options: ['good', 'to watch', 'fierce', 'go on'],
+            correctIndex: 2,
             audioText: 'ดุ',
           },
           {
@@ -489,13 +648,14 @@ export const phase2Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'Which has a LONG vowel?',
-        promptThai: 'กี vs กิ',
-        options: ['กิ (gi)', 'กี (gii)', 'Both are long', 'Both are short'],
-        correctIndex: 1,
+        prompt: 'ดี means "good" (long vowel). What does ดุ (short vowel) mean?',
+        promptThai: 'ดุ',
+        options: ['good', 'to watch', 'fierce', 'go on'],
+        correctIndex: 2,
+        audioText: 'ดุ',
       },
     ],
-    srsItemIds: ['sara_i', 'sara_u'],
+    srsItemIds: ['sara_i', 'sara_u', 'w_di', 'w_du'],
     skillPreview: {
       heading: 'You\'ll hear the difference between short and long',
       examples: [
@@ -557,6 +717,40 @@ export const phase2Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'ไป',
+            romanization: 'bpai',
+            english: 'to go',
+            detail: 'ป + ไ- = bpai. One of the most common Thai words.',
+            audioText: 'ไป',
+          },
+          {
+            thai: 'กำ',
+            romanization: 'gam',
+            english: 'to grip',
+            detail: 'ก + -ำ = gam. The vowel -ำ includes the "m" ending.',
+            audioText: 'กำ',
+          },
+          {
+            thai: 'กัด',
+            romanization: 'gat',
+            english: 'to bite',
+            detail: 'ก + -ั + ด = gat. The -ั needs a final consonant.',
+            audioText: 'กัด',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'Now you can make useful phrases. ไปดู means "go watch" and ไปกิน means "go eat." Thai often strings verbs together without extra words.',
+        examples: [
+          { thai: 'ไปดู', romanization: 'bpai duu', english: 'go watch' },
+          { thai: 'ไปกิน', romanization: 'bpai gin', english: 'go eat' },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -574,6 +768,14 @@ export const phase2Lessons: RichLesson[] = [
             options: ['daa', 'dam', 'dai', 'dii'],
             correctIndex: 1,
             audioText: 'ดำ',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does ไป mean?',
+            promptThai: 'ไป',
+            options: ['to grip', 'to bite', 'to go', 'to eat'],
+            correctIndex: 2,
+            audioText: 'ไป',
           },
           {
             type: 'multiple_choice',
@@ -595,11 +797,9 @@ export const phase2Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'How do you pronounce this?',
-        promptThai: 'ตำ',
-        options: ['dtai', 'dtam', 'dtaa', 'dtii'],
+        prompt: 'What does ไปดู mean?',
+        options: ['go eat', 'go watch', 'to grip', 'to bite'],
         correctIndex: 1,
-        audioText: 'ตำ',
       },
       {
         type: 'multiple_choice',
@@ -614,7 +814,7 @@ export const phase2Lessons: RichLesson[] = [
         correctIndex: 2,
       },
     ],
-    srsItemIds: ['sara_am', 'sara_ai_maimalai', 'mai_han_akat'],
+    srsItemIds: ['sara_am', 'sara_ai_maimalai', 'mai_han_akat', 'w_bpai', 'w_kam', 'w_gat'],
     skillPreview: {
       heading: 'You\'ll read complex vowel combinations',
       examples: [

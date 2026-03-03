@@ -57,6 +57,40 @@ export const phase3Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'สี',
+            romanization: 'sii',
+            english: 'color',
+            detail: 'ส + -ี = sii. High class, so rising tone.',
+            audioText: 'สี',
+          },
+          {
+            thai: 'ฝา',
+            romanization: 'faa',
+            english: 'lid / cover',
+            detail: 'ฝ + -า = faa. The keyword for ฝ.',
+            audioText: 'ฝา',
+          },
+          {
+            thai: 'ผ้า',
+            romanization: 'phaa',
+            english: 'cloth / fabric',
+            detail: 'ผ + -า = phaa. The tone mark changes the tone.',
+            audioText: 'ผ้า',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'You can describe things with สี (color) and ดี (good). สีดี means "good color" and ผ้าดี means "good cloth."',
+        examples: [
+          { thai: 'สีดี', romanization: 'sii dii', english: 'good color' },
+          { thai: 'ผ้าดี', romanization: 'phaa dii', english: 'good cloth' },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -74,6 +108,22 @@ export const phase3Lessons: RichLesson[] = [
             options: ['fii', 'saa', 'faa', 'paa'],
             correctIndex: 2,
             audioText: 'ฝา',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does สี mean?',
+            promptThai: 'สี',
+            options: ['lid', 'cloth', 'color', 'good'],
+            correctIndex: 2,
+            audioText: 'สี',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does ผ้า mean?',
+            promptThai: 'ผ้า',
+            options: ['color', 'cloth', 'lid', 'bee'],
+            correctIndex: 1,
+            audioText: 'ผ้า',
           },
           {
             type: 'match',
@@ -104,11 +154,11 @@ export const phase3Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'How do you pronounce this?',
-        promptThai: 'ไส',
-        options: ['sii', 'sai', 'saa', 'sam'],
-        correctIndex: 1,
-        audioText: 'ไส',
+        prompt: 'What does ฝา mean?',
+        promptThai: 'ฝา',
+        options: ['color', 'cloth', 'lid', 'bee'],
+        correctIndex: 2,
+        audioText: 'ฝา',
       },
       {
         type: 'multiple_choice',
@@ -119,7 +169,7 @@ export const phase3Lessons: RichLesson[] = [
         audioText: 'ฝี',
       },
     ],
-    srsItemIds: ['sor_suea', 'for_faa', 'phor_phueng'],
+    srsItemIds: ['sor_suea', 'for_faa', 'phor_phueng', 'w_sii', 'w_faa', 'w_phaa'],
     skillPreview: {
       heading: 'You\'ll read words with aspirated consonants',
       examples: [
@@ -180,6 +230,40 @@ export const phase3Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'งู',
+            romanization: 'nguu',
+            english: 'snake',
+            detail: 'ง + -ู = nguu. The keyword for ง.',
+            audioText: 'งู',
+          },
+          {
+            thai: 'นา',
+            romanization: 'naa',
+            english: 'rice field',
+            detail: 'น + -า = naa. A very common word.',
+            audioText: 'นา',
+          },
+          {
+            thai: 'น้ำ',
+            romanization: 'naam',
+            english: 'water',
+            detail: 'น + -ำ = naam. Uses the compound vowel -ำ.',
+            audioText: 'น้ำ',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'With these new consonants you can read more real words. น้ำดี means "good water" and นาดี means "a good rice field."',
+        examples: [
+          { thai: 'น้ำดี', romanization: 'naam dii', english: 'good water' },
+          { thai: 'นาดี', romanization: 'naa dii', english: 'good rice field' },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -205,6 +289,14 @@ export const phase3Lessons: RichLesson[] = [
             correctIndex: 2,
           },
           {
+            type: 'multiple_choice',
+            prompt: 'What does น้ำ mean?',
+            promptThai: 'น้ำ',
+            options: ['rice field', 'snake', 'water', 'good'],
+            correctIndex: 2,
+            audioText: 'น้ำ',
+          },
+          {
             type: 'match',
             pairs: [
               { left: 'คา', right: 'kaa' },
@@ -226,9 +318,11 @@ export const phase3Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'ค and ข make the same sound. What is different?',
-        options: ['Their vowel', 'Their consonant class', 'Nothing', 'Their size'],
+        prompt: 'What does งู mean?',
+        promptThai: 'งู',
+        options: ['water', 'snake', 'rice field', 'person'],
         correctIndex: 1,
+        audioText: 'งู',
       },
       {
         type: 'multiple_choice',
@@ -240,12 +334,12 @@ export const phase3Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'How many consonants are in the low class?',
-        options: ['9', '11', '24', '44'],
+        prompt: 'What does น้ำดี mean?',
+        options: ['good rice field', 'good snake', 'good water', 'good person'],
         correctIndex: 2,
       },
     ],
-    srsItemIds: ['khor_khwaai', 'ngor_nguu', 'nor_nuu'],
+    srsItemIds: ['khor_khwaai', 'ngor_nguu', 'nor_nuu', 'w_nguu', 'w_naa', 'w_naam'],
     skillPreview: {
       heading: 'You\'ll read words with low-class consonants',
       examples: [
@@ -305,6 +399,48 @@ export const phase3Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'มา',
+            romanization: 'maa',
+            english: 'to come',
+            detail: 'ม + -า = maa. One of the first verbs you need.',
+            audioText: 'มา',
+          },
+          {
+            thai: 'รู้',
+            romanization: 'ruu',
+            english: 'to know',
+            detail: 'ร + -ู = ruu. The tone mark gives it a high tone.',
+            audioText: 'รู้',
+          },
+          {
+            thai: 'วัน',
+            romanization: 'wan',
+            english: 'day',
+            detail: 'ว + -ั + น = wan. Uses the short "a" vowel.',
+            audioText: 'วัน',
+          },
+          {
+            thai: 'ไม่',
+            romanization: 'mai',
+            english: 'not',
+            detail: 'ม + ไ- = mai. Essential for making negative sentences.',
+            audioText: 'ไม่',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'With มา (come), ดู (watch), and กิน (eat) you can build real sentences. ไม่ (not) negates any verb: ไม่ดี = "not good."',
+        examples: [
+          { thai: 'มาดู', romanization: 'maa duu', english: 'come watch' },
+          { thai: 'ไม่ดี', romanization: 'mai dii', english: 'not good' },
+          { thai: 'มากิน', romanization: 'maa gin', english: 'come eat' },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -322,6 +458,22 @@ export const phase3Lessons: RichLesson[] = [
             options: ['luu', 'ruu', 'wuu', 'muu'],
             correctIndex: 1,
             audioText: 'รู',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does มา mean?',
+            promptThai: 'มา',
+            options: ['to know', 'to come', 'day', 'not'],
+            correctIndex: 1,
+            audioText: 'มา',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does ไม่ mean?',
+            promptThai: 'ไม่',
+            options: ['to come', 'day', 'to know', 'not'],
+            correctIndex: 3,
+            audioText: 'ไม่',
           },
           {
             type: 'match',
@@ -346,19 +498,17 @@ export const phase3Lessons: RichLesson[] = [
     assessment: [
       {
         type: 'multiple_choice',
-        prompt: 'How do you pronounce this?',
-        promptThai: 'ลี',
-        options: ['laa', 'lii', 'rii', 'wii'],
+        prompt: 'What does มา mean?',
+        promptThai: 'มา',
+        options: ['to know', 'to come', 'not', 'day'],
         correctIndex: 1,
-        audioText: 'ลี',
+        audioText: 'มา',
       },
       {
         type: 'multiple_choice',
-        prompt: 'How do you pronounce this?',
-        promptThai: 'วา',
-        options: ['raa', 'laa', 'waa', 'maa'],
-        correctIndex: 2,
-        audioText: 'วา',
+        prompt: 'What does ไม่ดี mean?',
+        options: ['come watch', 'not good', 'good day', 'come eat'],
+        correctIndex: 1,
       },
       {
         type: 'multiple_choice',
@@ -368,14 +518,14 @@ export const phase3Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'How do you pronounce this?',
-        promptThai: 'มู',
-        options: ['mii', 'muu', 'maa', 'maw'],
-        correctIndex: 1,
-        audioText: 'มู',
+        prompt: 'What does วัน mean?',
+        promptThai: 'วัน',
+        options: ['to come', 'to know', 'not', 'day'],
+        correctIndex: 3,
+        audioText: 'วัน',
       },
     ],
-    srsItemIds: ['mor_maa', 'ror_ruea', 'lor_ling', 'wor_waen'],
+    srsItemIds: ['mor_maa', 'ror_ruea', 'lor_ling', 'wor_waen', 'w_maa', 'w_ruu', 'w_wan', 'w_mai'],
     skillPreview: {
       heading: 'You\'ll read everyday Thai words',
       examples: [
@@ -437,6 +587,41 @@ export const phase3Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'ทำ',
+            romanization: 'tham',
+            english: 'to do / to make',
+            detail: 'ท + -ำ = tham. Extremely common verb.',
+            audioText: 'ทำ',
+          },
+          {
+            thai: 'ชา',
+            romanization: 'chaa',
+            english: 'tea',
+            detail: 'ช + -า = chaa. Same word as in English "chai tea."',
+            audioText: 'ชา',
+          },
+          {
+            thai: 'ยา',
+            romanization: 'yaa',
+            english: 'medicine',
+            detail: 'ย + -า = yaa.',
+            audioText: 'ยา',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'With ทำ (to do) and มา (to come) you can chain verbs: มาทำ means "come do (it)." ชาดี means "good tea" and ทำดี means "do good."',
+        examples: [
+          { thai: 'ชาดี', romanization: 'chaa dii', english: 'good tea' },
+          { thai: 'ทำดี', romanization: 'tham dii', english: 'do good' },
+          { thai: 'มาทำ', romanization: 'maa tham', english: 'come do (it)' },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -456,6 +641,22 @@ export const phase3Lessons: RichLesson[] = [
             audioText: 'ชา',
           },
           {
+            type: 'multiple_choice',
+            prompt: 'What does ทำ mean?',
+            promptThai: 'ทำ',
+            options: ['tea', 'medicine', 'to do', 'to come'],
+            correctIndex: 2,
+            audioText: 'ทำ',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does ชา mean?',
+            promptThai: 'ชา',
+            options: ['medicine', 'tea', 'to do', 'elephant'],
+            correctIndex: 1,
+            audioText: 'ชา',
+          },
+          {
             type: 'match',
             pairs: [
               { left: 'ทา', right: 'taa' },
@@ -469,10 +670,10 @@ export const phase3Lessons: RichLesson[] = [
     assessment: [
       {
         type: 'multiple_choice',
-        prompt: 'How do you pronounce this?',
+        prompt: 'What does ยา mean?',
         promptThai: 'ยา',
-        options: ['yaa', 'waa', 'raa', 'chaa'],
-        correctIndex: 0,
+        options: ['tea', 'to do', 'medicine', 'elephant'],
+        correctIndex: 2,
         audioText: 'ยา',
       },
       {
@@ -488,11 +689,9 @@ export const phase3Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'How do you pronounce this?',
-        promptThai: 'ชี',
-        options: ['chii', 'tii', 'sii', 'yii'],
-        correctIndex: 0,
-        audioText: 'ชี',
+        prompt: 'What does ชาดี mean?',
+        options: ['good medicine', 'good tea', 'do good', 'come do'],
+        correctIndex: 1,
       },
       {
         type: 'multiple_choice',
@@ -503,7 +702,7 @@ export const phase3Lessons: RichLesson[] = [
         audioText: 'ไท',
       },
     ],
-    srsItemIds: ['thor_thong', 'chor_chaang', 'yor_yak'],
+    srsItemIds: ['thor_thong', 'chor_chaang', 'yor_yak', 'w_tham', 'w_chaa', 'w_yaa'],
     skillPreview: {
       heading: 'You\'ll read common Thai words',
       examples: [
@@ -563,6 +762,33 @@ export const phase3Lessons: RichLesson[] = [
         ],
       },
       {
+        kind: 'info_card',
+        items: [
+          {
+            thai: 'กิน',
+            romanization: 'gin',
+            english: 'to eat',
+            detail: 'ก + -ิ + น = gin. Essential everyday word.',
+            audioText: 'กิน',
+          },
+          {
+            thai: 'มี',
+            romanization: 'mii',
+            english: 'to have',
+            detail: 'ม + -ี = mii. Another high-frequency verb.',
+            audioText: 'มี',
+          },
+        ],
+      },
+      {
+        kind: 'rule',
+        rule: 'Now you can build longer phrases by chaining words you know. มากินไก่ means "come eat chicken" and ไปดูนา means "go look at the rice field."',
+        examples: [
+          { thai: 'มากินไก่', romanization: 'maa gin gai', english: 'come eat chicken' },
+          { thai: 'ไปดูนา', romanization: 'bpai duu naa', english: 'go look at the rice field' },
+        ],
+      },
+      {
         kind: 'practice',
         exercises: [
           {
@@ -583,11 +809,19 @@ export const phase3Lessons: RichLesson[] = [
           },
           {
             type: 'multiple_choice',
-            prompt: 'How do you pronounce this word?',
-            promptThai: 'ดี',
-            options: ['dii', 'dtii', 'gii', 'bii'],
-            correctIndex: 0,
-            audioText: 'ดี',
+            prompt: 'What does กิน mean?',
+            promptThai: 'กิน',
+            options: ['to come', 'to eat', 'to have', 'to go'],
+            correctIndex: 1,
+            audioText: 'กิน',
+          },
+          {
+            type: 'multiple_choice',
+            prompt: 'What does มี mean?',
+            promptThai: 'มี',
+            options: ['to come', 'to eat', 'to have', 'not'],
+            correctIndex: 2,
+            audioText: 'มี',
           },
           {
             type: 'multiple_choice',
@@ -610,19 +844,17 @@ export const phase3Lessons: RichLesson[] = [
       },
       {
         type: 'multiple_choice',
-        prompt: 'How do you pronounce this?',
-        promptThai: 'ชา',
-        options: ['saa', 'taa', 'chaa', 'yaa'],
-        correctIndex: 2,
-        audioText: 'ชา',
+        prompt: 'What does กิน mean?',
+        promptThai: 'กิน',
+        options: ['to come', 'to eat', 'good', 'to go'],
+        correctIndex: 1,
+        audioText: 'กิน',
       },
       {
         type: 'multiple_choice',
-        prompt: 'How do you pronounce this?',
-        promptThai: 'ไก',
-        options: ['gii', 'gaa', 'gai', 'gam'],
-        correctIndex: 2,
-        audioText: 'ไก',
+        prompt: 'What does มากินไก่ mean?',
+        options: ['go eat chicken', 'come eat chicken', 'good chicken', 'eat good fish'],
+        correctIndex: 1,
       },
       {
         type: 'multiple_choice',
@@ -641,7 +873,7 @@ export const phase3Lessons: RichLesson[] = [
         audioText: 'ลำ',
       },
     ],
-    srsItemIds: [],
+    srsItemIds: ['w_gin', 'w_mii'],
     skillPreview: {
       heading: 'You\'ll read signs and everyday text',
       examples: [
