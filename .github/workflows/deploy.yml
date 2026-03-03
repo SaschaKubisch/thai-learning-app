@@ -27,6 +27,8 @@ jobs:
 
       - run: npm ci
       - run: npm run build
+        env:
+          VITE_SHOW_STREET_THAI: ${{ vars.VITE_SHOW_STREET_THAI }}
 
       - uses: actions/upload-pages-artifact@v3
         with:
