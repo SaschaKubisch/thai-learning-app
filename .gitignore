@@ -1,6 +1,8 @@
 # Claude Code
-.claude/memory/
-.claude/worktrees/
+.claude/
+
+# Planning docs
+docs/
 
 # OS
 .DS_Store
