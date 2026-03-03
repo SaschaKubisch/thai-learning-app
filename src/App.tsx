@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom'
 import { ProgressProvider } from './hooks/useProgress'
 import { HomeScreen } from './components/HomeScreen'
 import { RichLessonScreen } from './components/lesson/RichLessonScreen'
@@ -17,17 +17,20 @@ import { richLessons } from './content/richLessons'
 const contentMap = buildContentMap(consonants, vowels, words, grammarPatterns, phrases, toneMarks)
 initLessonManager(lessons, contentMap, richLessons)
 
+// Use HashRouter in production (GitHub Pages) and BrowserRouter in development
+const Router = import.meta.env.PROD ? HashRouter : BrowserRouter
+
 function App() {
 
   return (
     <ProgressProvider>
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/lesson/:lessonId" element={<RichLessonScreen />} />
           <Route path="/review" element={<ReviewScreen />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </ProgressProvider>
   )
 }
