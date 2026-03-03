@@ -12,6 +12,7 @@ Personal Claude Code skills for software development workflows.
 - **test-plan** -- create a testing strategy
 - **tickets** -- break a spec into GitHub Issues
 - **new-project** -- scaffold a new project repo with skills
+- **release** -- versioned releases with notes, tagging, and GitHub releases
 - **video-editing** -- video editing workflows
 
 ## Usage
